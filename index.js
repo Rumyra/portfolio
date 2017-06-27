@@ -3,8 +3,10 @@ var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
 var layouts = require('metalsmith-layouts');
 var sass = require('metalsmith-sass');
+var collections = require('metalsmith-collections');
 var markdown = require('metalsmith-markdown');
 var drafts = require('metalsmith-drafts');
+var partials = require('metalsmith-discover-partials');
 
 Metalsmith(__dirname)
   .metadata({
@@ -17,7 +19,7 @@ Metalsmith(__dirname)
   })
 
   .source('./src')
-  .destination('./build')
+  .destination('./docs')
   .clean(true) // rebuild everything
 
   .use(sass({
@@ -25,8 +27,20 @@ Metalsmith(__dirname)
     sourceMap: true
   }))
 
+  .use(partials({
+    directory: './layouts/partials/',
+    pattern: /\.hbs$/
+  }))
+
   .use(drafts())
   .use(markdown())
+
+  .use(collections({
+    workItems: {
+      pattern: 'work-items/*.md',
+      sortBy: 'dateTo'
+    }
+  }))
 
   .use(layouts({
     engine: 'handlebars'

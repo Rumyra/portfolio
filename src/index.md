@@ -1,7 +1,7 @@
 ---
 title: About | Ruth John
 draft: false
-layout: layout.html
+layout: index.hbs
 ---
 
 Ruth John is an award nominated digital artist, web consultant, speaker and writer, with 15 years of experience in the digital industry.
