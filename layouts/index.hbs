@@ -16,7 +16,7 @@
   <title>{{ title }}</title>
   <meta name="description" content="">
 
-  <link type="text/css" href="public/whitepaper/styles/application.css" rel="stylesheet" media="screen" />
+  <link type="text/css" href="assets/css/style.css" rel="stylesheet" media="screen" />
   <!-- <link type="text/css" href="/assets/stylesheets/styleguide_specifics.css" rel="stylesheet" media="screen" /> -->
 
   <!--include if you want modenizr (rest of scripts just before </body>)
@@ -30,16 +30,18 @@
         <h1><a href="/">Ruth John</a></h1>
       </section>
       <nav>
-        <a href="/#home">Home</a>
-        <a href="/#portfolio">My Things</a>
-        <a href="/#contact">Contact</a>
+        <a href="/" class="nav-active">Home</a>
+        <a href="/things/">My Things</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </header>
     <main>
 
     {{{contents}}}
 
-    {{ footer }}
+    </main>
+
+    {{> footer }}
 
 </body>
 </html>

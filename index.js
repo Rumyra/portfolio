@@ -7,6 +7,7 @@ var collections = require('metalsmith-collections');
 var markdown = require('metalsmith-markdown');
 var drafts = require('metalsmith-drafts');
 var partials = require('metalsmith-discover-partials');
+var permalinks  = require('metalsmith-permalinks');
 
 Metalsmith(__dirname)
   .metadata({
@@ -36,7 +37,7 @@ Metalsmith(__dirname)
   .use(markdown())
 
   .use(collections({
-    workItems: {
+    workItem: {
       pattern: 'work-items/*.md',
       sortBy: 'dateTo'
     }
@@ -44,6 +45,10 @@ Metalsmith(__dirname)
 
   .use(layouts({
     engine: 'handlebars'
+  }))
+
+  .use(permalinks({ // change URLs to permalink URLs
+    relative: false // put css only in /css
   }))
 
   .use(serve())

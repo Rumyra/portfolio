@@ -1,21 +1,22 @@
 ---
+collection: workItem
 title: CSS Day Talk
 location: Compagnietheater, Amsterdam
 latLong:
-  - lat:
-    long:
+  - lat: 52
+    long: 3
 dateFrom: 2017-06-15
 dateTo: 2017-06-16
 url: https://cssday.nl/2017
-github:
-twitter:
+github: null
+twitter: null
 quote:
-  - q:
-  - cite:
+  - q: Hello
+    cite: Me
 
-images:
+images: null
 
-videos:
+videos: null
 
 tags:
   - website

@@ -1,0 +1,49 @@
+$peach: #facbbd;
+$nude: #f9decc;
+$vanilla: #f5e8d7;
+$sky: #cad8da;
+$denim: #94abb4;
+$slate: #7e7b7f;
+
+$blue: hsla(238, 28%, 37%, 1.0);
+$turq: hsla(167, 43%, 43%, 1.0);
+
+$grey: $slate;
+$darkGrey: darken($grey, 20%);
+$lightGrey: lighten($grey, 20%);
+$extraLightGrey: lighten($grey, 40%);
+
+$white: lighten($vanilla,10%);
+$black: darken($slate,20%);
+
+//2.2 Font imports & settings
+@include font-face('Font Awesome', '../fonts/fontAwesome/fontawesome-webfont');
+@include font-face('Khula', '../fonts/Khula/Khula-Light');
+@include font-face('Khula', '../fonts/Khula/Khula-SemiBold', bold);
+
+$font:'Khula', Helvetica, Arial, sans-serif !default;
+$fontSize:0.9em !default;
+$lineHeight:1.8 !default;
+$letterSpacing:0.1em;
+
+$headerFont: 'Khula', Helvetica, Arial, sans-serif !default;
+$headerLineHeight:1.5;
+
+$iconFont:'Font Awesome', monospace !default;
+$iconFontSize:20px !default;
+$iconLineHeight:25px !default;
+
+// top and bottom space
+$verticalSpace:1.8em !default;
+// left and right space
+$gutter:1.8em !default;
+
+// use with breakpoint mixin like @include until($small) or @include at-least($screenLarge)
+$screenSmall:480px;
+$screenMedium:640px;
+$screenLarge:860px;
+$screenXlarge:1280px;
+
+
+
+

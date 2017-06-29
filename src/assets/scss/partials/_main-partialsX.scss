@@ -1,0 +1,179 @@
+//CONTENTS
+
+// 1. html & body
+// 2. Site structure
+//     2.1 Main header, aside and footer
+//     2.2 Main content container
+
+
+// 1. HTML & BODY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+html { background-color: $blue; }
+body {
+  overflow: auto;
+  font-family: $font;
+  font-size: 100%;
+  color: $white;
+  @include at-least($screenXlarge) { font-size: 112%; }
+  @include until($screenMedium) { font-size: 90%; }
+  @include until($screenSmall) { font-size: 84%; }
+}
+// remember to define focus styles!
+:focus { outline: 0; }
+
+// 2. SITE STRUCTURE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 2.1 Main header, aside & footer
+// Default layout is full width add .layout-sidebar for large screens to have side nav
+.page {
+  display: flex; flex-direction: column;
+  width: 100vw; height: 100vh;
+  margin: 0px; padding: 0px;
+  box-sizing: border-box;
+  border:6px solid $white;
+}
+
+@mixin pageBorder($colour) {
+  box-shadow:
+    inset 0px 0px 0px 3px $colour,
+    inset 0px 0px 0px 8px $white
+  ;
+}
+
+.home {@include pageBorder($blue);}
+.portfolio {@include pageBorder($turq);}
+.contact {@include pageBorder($slate);}
+
+.page > header,
+.page > footer {
+  padding: $verticalSpace $gutter $verticalSpace/2;
+  box-sizing:border-box;
+  flex: none;
+}
+
+.page > header {
+  overflow: hidden;
+  & > section {
+    float:left;
+    h1 {
+      margin-bottom:0px;
+      a {font-weight: bold;}
+    }
+    p {margin:0px;}
+  }
+  & > nav {
+    float:right;
+    display:flex; justify-content:space-between;
+    width: 36%;
+    a {
+      padding: $verticalSpace/3 $gutter/2;
+      border-width:2px;
+      background-color: $white;
+      box-shadow: inset 0px 0px 0px 2px $blue;
+      color:$blue;
+      text-transform: uppercase;
+      font-weight: bold;
+      &:hover {
+        background-color:transparent;
+        box-shadow:none;
+        color: $white;
+      }
+    }
+  }
+}
+.portfolio {
+  nav a {
+    box-shadow: inset 0px 0px 0px 2px $turq;
+    color:$turq;
+  }
+}
+.contact {
+  nav a {
+    box-shadow: inset 0px 0px 0px 2px $slate;
+    color:$slate;
+  }
+}
+
+.page > footer {
+  width: 100%;
+  padding: $verticalSpace $gutter;
+  display:flex; justify-content:space-between;
+  p, ul {
+      width:50%;
+      // display: inline-block;
+      // text-align: right;
+  }
+  // p {padding-right: $verticalSpace;}
+  ul {
+    @include clearListStyles;
+    display: flex; justify-content:space-between;
+    li {
+      a {
+        border:none;
+        svg {
+          width:auto; height:48px;
+          padding:$verticalSpace/2 $gutter/2;
+          box-sizing:border-box;
+          background-color: $white;
+          border-radius: 2px;
+          border: 2px solid white;
+          box-shadow: inset 0px 0px 0px 2px $blue;
+          path {fill:$blue;}
+        }
+      }
+    }
+  }
+}
+
+main {
+  flex: 1 0 auto; box-sizing:border-box;
+  margin: 0px $gutter;
+  padding: $verticalSpace 0px;
+}
+main::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: $verticalSpace;
+  height: 0px;
+  visibility: hidden;
+}
+
+/*2.2 Main content container*/
+
+
+// @include at-least($screenLarge) {
+
+//   .layout-sidebar {
+//     header[role="banner"],
+//     body > aside {
+//       width: 32%;
+//       float: left;
+//       text-align: right;
+//     }
+//     header[role="banner"] {
+//       nav {
+//         //due to @extends not being allowed within @includes this is just a copy from nav-block-vertical.
+//         & > ul {
+//           background-color: transparent;
+//           & > li > a {
+//             background-color: $blockNavBackgroundColour;
+//             &:hover { background-color: darken($blockNavBackgroundColour, 20%); }
+//           }
+//         }
+//         li {
+//           display: block;
+//           margin-bottom: $verticalSpace/4;
+//         }
+//         .nav-sub {
+//           display: block;
+//           position: static;
+//           border-width: 0px;
+//         }
+//       }
+//     }
+
+//     section[role="main"] {
+//       width: 67.5%;
+//       float: right;
+//     }
+//   }
+// }
+
