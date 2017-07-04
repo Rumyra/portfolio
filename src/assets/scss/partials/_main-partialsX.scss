@@ -7,9 +7,10 @@
 
 
 // 1. HTML & BODY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-html { background-color: $blue; }
+html {}
 body {
   overflow: auto;
+  background-color: $blue;
   font-family: $font;
   font-size: 100%;
   color: $white;
@@ -17,6 +18,8 @@ body {
   @include until($screenMedium) { font-size: 90%; }
   @include until($screenSmall) { font-size: 84%; }
 }
+.portfolio {background-color:$turq;}
+.contact {background-color:$slate;}
 // remember to define focus styles!
 :focus { outline: 0; }
 
@@ -38,9 +41,9 @@ body {
   ;
 }
 
-.home {@include pageBorder($blue);}
-.portfolio {@include pageBorder($turq);}
-.contact {@include pageBorder($slate);}
+.home .page {@include pageBorder($blue);}
+.portfolio .page {@include pageBorder($turq);}
+.contact .page {@include pageBorder($slate);}
 
 .page > header,
 .page > footer {
@@ -61,7 +64,7 @@ body {
   }
   & > nav {
     float:right;
-    display:flex; justify-content:space-between;
+    display:flex; justify-content:flex-end;
     width: 36%;
     a {
       padding: $verticalSpace/3 $gutter/2;
@@ -71,26 +74,29 @@ body {
       color:$blue;
       text-transform: uppercase;
       font-weight: bold;
-      &:hover {
-        background-color:transparent;
-        box-shadow:none;
-        color: $white;
-      }
     }
   }
 }
-.portfolio {
-  nav a {
+.portfolio .page > header {
+  & > nav a {
     box-shadow: inset 0px 0px 0px 2px $turq;
     color:$turq;
   }
 }
-.contact {
-  nav a {
+.contact .page > header {
+  & > nav a {
     box-shadow: inset 0px 0px 0px 2px $slate;
     color:$slate;
   }
 }
+.page > header {
+  & > nav a:hover, & > nav a.nav-active {
+    background-color:transparent;
+    box-shadow:none;
+    color: $white;
+  }
+}
+
 
 .page > footer {
   width: 100%;
@@ -104,7 +110,7 @@ body {
   // p {padding-right: $verticalSpace;}
   ul {
     @include clearListStyles;
-    display: flex; justify-content:space-between;
+    display: flex; justify-content:flex-end;
     li {
       a {
         border:none;
@@ -120,6 +126,25 @@ body {
         }
       }
     }
+  }
+}
+.portfolio .page > footer {
+  ul li a svg {
+    box-shadow: inset 0px 0px 0px 2px $turq;
+    path {fill:$turq;}
+  }
+}
+.contact .page > footer {
+  ul li a svg {
+    box-shadow: inset 0px 0px 0px 2px $slate;
+    path {fill:$slate;}
+  }
+}
+.page > footer {
+  ul li a:hover svg {
+    background-color: transparent;
+    box-shadow: none;
+    path {fill:$white;}
   }
 }
 
