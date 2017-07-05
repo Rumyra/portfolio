@@ -32,7 +32,7 @@ tags:
   - live:js
 
 featured: false
-draft: true
+draft: false
 ---
 
 New talk about the Web Audio API for CSS day in Amsterdam.

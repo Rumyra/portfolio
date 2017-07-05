@@ -3,7 +3,7 @@ collection: workItem
 title: CSS Day Talk
 location: Compagnietheater, Amsterdam
 featured: false
-draft: false
+draft: true
 ---
 
 New talk about the Web Audio API for CSS day in Amsterdam.

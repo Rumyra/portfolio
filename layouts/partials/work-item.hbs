@@ -1,23 +1,15 @@
-<li class="projectType" data-portitem="uniqueIDhere"><!-- click to open & close or animation for more info-->
-  <picture>
-    <!-- hero image -->
-    <img src="media/work/webvj.png" height="100" width="100" />
-  </picture>
-  <h4>title some fuhdg gjod fgjog fdj ffdsf</h4>
-  <p><time datetime="2004-05-23">May '04</time></p>
-</li>
-
-<li class="work-item">
+<li class="work-item featured">
   <div class="col">
     <section class="tags">
-      <span>talk</span>
-      <span>app</span>
+      {{#each tags}}
+        <span>{{.}}</span>
+      {{/each}}
     </section>
     <article>
       <picture>
         <img class="img-main" src="" />
       </picture>
-      <h3>Work Item Title</h3>
+      <h3>{{title}}</h3>
       <p>Work item description here... blah blah blah</p>
       <section class="thumbnails">
         <img src="" />

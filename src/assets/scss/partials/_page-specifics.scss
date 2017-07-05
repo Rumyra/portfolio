@@ -24,49 +24,10 @@ main {
   }
 }
 
-$itemCount:60;
 // portfolio
 .portfolio {
   background-color: $turq;
   @include gradient($turq, lighten($turq, 10%), 0deg);
-}
-.portfolio-list {
-  ul {
-    display: grid; justify-content:end;
-  }
-  li {
-    width: 6vw; height:6vw;
-    position: relative;
-
-    @for $i from 0 through ($itemCount)-1 {
-      $row: ceil( ($i+1)/10 );
-      $col: ( (($i%10)+1)*-1 )-$row;
-      $col2:( (($i%10)+1)*-1 )-($row+1);
-      &:nth-of-type(#{$i+1}) {grid-area: 
-        $row #{'/'}
-        $col #{'/'}
-        $row #{'/'}
-        $col2;
-      }
-    }
-
-    &:nth-of-type(1) {grid-area: 1 / -1 / 1 / -2;}
-    &:nth-of-type(2) {grid-area: 1 / -2 / 1 / -3;}
-    &:nth-of-type(3) {grid-area: 1 / -3 / 1 / -4;}
-
-    &:nth-of-type(4) {grid-area: 2 / -2 / 2 / -3;}
-    &:nth-of-type(5) {grid-area: 2 / -3 / 2 / -4;}
-
-    &:nth-of-type(6) {grid-area: 3 / -3 / 3 / -4;}
-    &:nth-of-type(7) {grid-area: 2 / -4 / 2 / -5;}
-
-
-
-    img {
-      position: absolute;
-      left: 0px; top: 0px;
-    }
-  }
 }
 
 // contact

@@ -149,6 +149,7 @@ body {
 }
 
 main {
+  position: relative;
   flex: 1 0 auto; box-sizing:border-box;
   margin: 0px $gutter;
   padding: $verticalSpace 0px;

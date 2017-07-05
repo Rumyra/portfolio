@@ -37,14 +37,14 @@
     </header>
     <main>
 
-    <article class="portfolio-list">
-      {{{ contents }}}
-      <ul>
-        {{#each collections.workItem as |work-item idx|}}
-        {{> work-item work-item=work-item }}
-        {{/each}}
-      </ul>
-    </article>
+      <article class="portfolio-list">
+        {{{ contents }}}
+        <ul>
+          {{#each collections.workItem as |work-item idx|}}
+          {{> work-item work-item=work-item }}
+          {{/each}}
+        </ul>
+      </article>
 
     </main>
 
