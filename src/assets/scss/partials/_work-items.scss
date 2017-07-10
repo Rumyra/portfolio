@@ -43,16 +43,26 @@ $itemCount:60;
 
 // full item layout
 .portfolio-list .featured {
-  position: absolute; top:0px; left:0px;
-  overflow: auto; box-sizing: border-box;
-  border: 1px solid red;
-  width: 60vw; height: 40vh;
 
-  .col {
-    float: left;
-    &:nth-of-type(1) {width:60%;}
-    &:nth-of-type(2) {width:40%;}
+  position: absolute; top:0px; left:0px;
+  width: 60vw; height: 100%;
+  display: grid;
+  grid-template-columns: 64% 36%;
+  grid-template-rows: 1fr 4fr 2fr 1fr 1fr;
+
+  border: 1px solid red;
+  
+
+  .tags {border:1px solid blue; grid-area:1/1/2/2;}
+  article {border:1px solid green; grid-area:2/1/4/2;}
+  .quote-slider {border:1px solid yellow; grid-area:4/1/6/2;}
+
+  .date {border:1px solid orange; grid-area:1/2/2/3;}
+  .map {
+    border:1px solid red; grid-area:2/2/3/3;
   }
+  .media {border:1px solid purple; grid-area:3/2/5/3;}
+  nav {border:1px solid blue; grid-area:5/2/6/3;}
 }
 
 
