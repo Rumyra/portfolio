@@ -20,7 +20,19 @@ main {
   background-color: $blue;
   @include gradient($blue, lighten($blue, 10%), 0deg);
   main {
-    p {width:70%;}
+    p {
+      width:70%;
+      margin-left: auto; margin-right: auto;
+      text-align: justify;
+    }
+  }
+}
+.home .about-cv {
+  section {
+    h2 {}
+    ul {
+      li {}
+    }
   }
 }
 

@@ -20,6 +20,7 @@ $black: darken($slate,20%);
 @include font-face('Font Awesome', '../fonts/fontAwesome/fontawesome-webfont');
 @include font-face('Khula', '../fonts/Khula/Khula-Light');
 @include font-face('Khula', '../fonts/Khula/Khula-SemiBold', bold);
+@include font-face('Playfair', '../fonts/Playfair/PlayfairDisplay-Italic', normal, italic);
 
 $font:'Khula', Helvetica, Arial, sans-serif !default;
 $fontSize:0.9em !default;

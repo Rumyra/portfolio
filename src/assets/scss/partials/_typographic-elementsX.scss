@@ -1,15 +1,22 @@
 //1. HEADERS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 header {}
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   margin-bottom: $verticalSpace/2;
   font-weight: bold;
   line-height: $headerLineHeight;
   letter-spacing: $letterSpacing;
   text-transform: uppercase;
 }
-h1, h2, h3, h4 { font-family: $headerFont; }
-h1 { font-size: $fontSize*2.6; }
-h2 { font-size: $fontSize*2.2; }
+h1, h3, h4 { font-family: $headerFont; }
+h1 { font-size: $fontSize*2.8; }
+h2 {
+  margin-bottom: $verticalSpace/2;
+  border: 1px solid $white;
+  border-width: 0px 0px 1px;
+  font-family: 'PLayfair', serif;
+  font-size: $fontSize*2.2;
+  font-style: italic; font-weight: normal;
+}
 h3 { font-size:$fontSize*1.9; }
 h4 { font-size:$fontSize*1.6; }
 h5 { font-size:$fontSize*1.4; }
@@ -53,17 +60,15 @@ sub { bottom: -0.25em; }
 //4. LINKS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 a {
   display:inline-block;
-  border:1px solid $white;
-  border-width:0px 0px 1px;
   font-weight:normal; font-size:$fontSize;
-  text-decoration:none; letter-spacing:$letterSpacing;
+  text-decoration:underline; letter-spacing:$letterSpacing;
   color: $white;
 }
 // normalise font size and remove underline for headers
 p a, address a, ul a, ol a, dl a, menu a { font-size: 100%; }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { border: none; font-size: 100%; color:$white;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-size: 100%; color:$white; text-decoration:none;}
 
-a:hover, a:active, a:visited {border-width:1px 0px 0px;}
+a:hover, a:active, a:visited {text-decoration:none;}
 a:focus { outline: thin dotted; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: $white; }
 
