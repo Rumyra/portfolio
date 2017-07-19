@@ -56,10 +56,7 @@ body {
   overflow: hidden;
   & > section {
     float:left;
-    h1 {
-      margin-bottom:0px;
-      a {font-weight: bold;}
-    }
+    h1 {margin-bottom:0px;}
     p {margin:0px;}
   }
   & > nav {
@@ -68,7 +65,7 @@ body {
     width: 36%;
     a {
       padding: $verticalSpace/3 $gutter/2;
-      border-width:2px;
+      border:2px solid $white;
       background-color: $white;
       box-shadow: inset 0px 0px 0px 2px $blue;
       color:$blue;
