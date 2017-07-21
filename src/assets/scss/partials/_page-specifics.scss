@@ -17,49 +17,85 @@ main {
 
 // home
 .about {
-  background-color: $blue;
-  @include gradient($blue, lighten($blue, 10%), 0deg);
-  .about-intro p {
-    width:70%;
-    margin-left: auto; margin-right: auto;
-    text-align: justify;
-  }
+  .about-intro {
+    padding-bottom:$verticalSpace*2;
+    p {
+      width:70%;
+      margin-left: auto; margin-right: auto;
+      text-align: justify;
+    }
+  } 
 }
+
+// @supports {
+//   .about-cv {
+//     display:grid; justify-content:space-between;
+//   }
+// }
+
 .about-cv {
   overflow: auto;
+  display:grid; justify-content:space-between;
+  grid-template-columns: 49.5% 49.5%;
   section {
-    width: 50%;
-    padding:$verticalSpace/2 $gutter 0px 0px;
-    float: left;
+    // width: 50%;
+    padding:$verticalSpace $gutter;
+    margin-bottom:2%;
+    // float: left;
     box-sizing: border-box;
 
-    border:1px solid $white;
-    box-shadow: inset 0px 0px 0px 10px transparentize($white, 0.6);
 
+
+    border:1px solid $white;
+    
     text-align:center;
 
+    &:nth-of-type(6n-5) {
+      background-color: $blue;
+      @include gradient($blue, lighten($blue,6%), 0deg);
+      @include fancyBorder($blue);
+    }
+    &:nth-of-type(6n-4) {
+      background-color: $purple;
+      @include gradient($purple, lighten($purple,6%), 0deg);
+      @include fancyBorder($purple);
+    }
+    &:nth-of-type(6n-3) {
+      background-color: $red;
+      @include fancyBorder($red);
+    }
+    &:nth-of-type(6n-2) {
+      background-color: $orange;
+      @include fancyBorder($orange);
+    }
+    &:nth-of-type(6n-1) {
+      background-color: $green;
+      @include fancyBorder($green);
+    }
+    &:nth-of-type(6n) {
+      background-color: $turq;
+      @include fancyBorder($turq);
+    }
 
-    &:nth-of-type(2n) {padding:$verticalSpace/2 0px 0px $gutter;}
 
-    h2 {}
+    h2 {
+      &::after {@include partBorder(25%, 25%);}
+    }
     ul, dl {
       margin:0px; padding:0px;
       // text-align: center;
       list-style: none;
     }
 
-    li {}
+    li, dt {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
 }
 
 // portfolio
-.portfolio {
-  background-color: $turq;
-  @include gradient($turq, lighten($turq, 10%), 0deg);
-}
+.portfolio {}
 
 // contact
-.contact {
-  background-color: $slate;
-  @include gradient($slate, lighten($slate, 10%), 0deg);
-}
+.contact {}

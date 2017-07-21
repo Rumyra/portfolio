@@ -11,19 +11,7 @@ h4, h5, h6 { font-weight: bold; letter-spacing: $letterSpacing; text-transform: 
 h1 { font-size: $fontSize*3.2; }
 h2 {
   position: relative;
-  // border: 1px solid $white;
-  // border-width: 0px 0px 1px;
   font-size: $fontSize*2.4;
-  &::after {
-    @include partBorder(25%, 0%);
-    // content: "";
-    // position: absolute;
-    // bottom: 0;
-    // left: 25%;
-    // right: 0%;
-    // height: 1px;
-    // background-color: $white;
-  }
 }
 
 h3 { font-size:$fontSize*1.9; }
@@ -90,7 +78,7 @@ ol {list-style:lower-roman;}
 li, dt, dd {font-size:$fontSize; line-height:$lineHeight; letter-spacing:$letterSpacing;}
 dt { font-weight:bold; }
 li {margin:$verticalSpace/2 0px; padding-left: $gutter/2;}
-dl > dd {margin:$verticalSpace/4 0px $verticalSpace/2;}
+dl > dd {margin:0px 0px $verticalSpace;}
 
 //5.2. Address & Time
 address, time {display:block; margin:$verticalSpace 0px;}

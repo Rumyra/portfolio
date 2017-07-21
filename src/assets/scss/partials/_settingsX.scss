@@ -1,12 +1,12 @@
-$peach: #facbbd;
-$nude: #f9decc;
-$vanilla: #f5e8d7;
-$sky: #cad8da;
-$denim: #94abb4;
-$slate: #7e7b7f;
+$vanilla: hsla(48, 42%, 95%, 1.0);
+$slate: hsla(180, 5%, 31%, 1.0);
 
 $blue: hsla(238, 28%, 37%, 1.0);
 $turq: hsla(167, 43%, 43%, 1.0);
+$green: hsla(65, 42%, 45%, 1.0);
+$orange: hsla(35, 55%, 48%, 1.0);
+$red: hsla(354, 44%, 48%, 1.0);
+$purple: hsla(324, 32%, 37%, 1.0);;
 
 $grey: $slate;
 $darkGrey: darken($grey, 20%);
@@ -23,7 +23,7 @@ $black: darken($slate,20%);
 @include font-face('Great Vibes', '../fonts/GreatVibes/GreatVibes-Regular', normal, italic);
 
 $font:'Khula', Helvetica, Arial, sans-serif !default;
-$fontSize:0.9em !default;
+$fontSize:1em !default;
 $lineHeight:1.8 !default;
 $letterSpacing:0.1em;
 
