@@ -102,11 +102,10 @@ body {
           width:auto; height:48px;
           padding:$verticalSpace/2 $gutter/2;
           box-sizing:border-box;
-          background-color: $white;
+          background-color: $black;
           border-radius: 2px;
-          border: 2px solid white;
-          box-shadow: inset 0px 0px 0px 2px $blue;
-          path {fill:$blue;}
+          @include smallFancyBorder($black);
+          path {fill:$white;}
         }
       }
     }
@@ -125,10 +124,20 @@ body {
   }
 }
 .page > footer {
-  ul li a:hover svg {
-    background-color: transparent;
-    box-shadow: none;
-    path {fill:$white;}
+  ul li {
+    &:nth-of-type(1) {
+      a:hover svg {background-color: $turq;}}
+    &:nth-of-type(2) {
+      a:hover svg {background-color: $blue;}}
+    &:nth-of-type(3) {
+      a:hover svg {background-color: $purple;}}
+    &:nth-of-type(4) {
+      a:hover svg {background-color: $red;}}
+    &:nth-of-type(5) {
+      a:hover svg {background-color: $orange;}}
+    &:nth-of-type(6) {
+      a:hover svg {background-color: $green;}}
+    
   }
 }
 

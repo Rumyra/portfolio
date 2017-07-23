@@ -58,6 +58,14 @@
   ;
 }
 
+@mixin smallFancyBorder($colour) {
+  border: 1px solid $white;
+  box-shadow:
+    inset 0px 0px 0px 1px $colour,
+    inset 0px 0px 0px 4px transparentize($white,0.7)
+  ;
+}
+
 @mixin partBorder($start, $finish) {
   content: "";
   position: absolute;
