@@ -50,8 +50,30 @@
   ;
 }
 
-@mixin setPageStyle($colour) {
-  a {color:$colour; &:hover{color:$white;}}
+@mixin fancyBorder($colour) {
+  border: 1px solid $white;
+  box-shadow:
+    inset 0px 0px 0px 2px $colour,
+    inset 0px 0px 0px 8px transparentize($white,0.7)
+  ;
+}
+
+@mixin smallFancyBorder($colour) {
+  border: 1px solid $white;
+  box-shadow:
+    inset 0px 0px 0px 1px $colour,
+    inset 0px 0px 0px 4px transparentize($white,0.7)
+  ;
+}
+
+@mixin partBorder($start, $finish) {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: $start;
+  right: $finish;
+  height: 1px;
+  background-color: $white;
 }
 
 

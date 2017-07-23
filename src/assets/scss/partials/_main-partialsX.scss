@@ -9,8 +9,9 @@
 // 1. HTML & BODY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 html {}
 body {
-  overflow: auto;
-  background-color: $blue;
+  overflow: auto; padding:6px;
+  background-color: $black;
+  @include gradient($black, lighten($black, 10%), 0deg);
   font-family: $font;
   font-size: 100%;
   color: $white;
@@ -18,8 +19,6 @@ body {
   @include until($screenMedium) { font-size: 90%; }
   @include until($screenSmall) { font-size: 84%; }
 }
-.portfolio {background-color:$turq;}
-.contact {background-color:$slate;}
 // remember to define focus styles!
 :focus { outline: 0; }
 
@@ -28,22 +27,10 @@ body {
 // Default layout is full width add .layout-sidebar for large screens to have side nav
 .page {
   display: flex; flex-direction: column;
-  width: 100vw; height: 100vh;
   margin: 0px; padding: 0px;
   box-sizing: border-box;
-  border:6px solid $white;
+  @include fancyBorder($slate);
 }
-
-@mixin pageBorder($colour) {
-  box-shadow:
-    inset 0px 0px 0px 3px $colour,
-    inset 0px 0px 0px 8px $white
-  ;
-}
-
-.home .page {@include pageBorder($blue);}
-.portfolio .page {@include pageBorder($turq);}
-.contact .page {@include pageBorder($slate);}
 
 .page > header,
 .page > footer {
@@ -56,10 +43,7 @@ body {
   overflow: hidden;
   & > section {
     float:left;
-    h1 {
-      margin-bottom:0px;
-      a {font-weight: bold;}
-    }
+    h1 {margin-bottom:0px;}
     p {margin:0px;}
   }
   & > nav {
@@ -68,7 +52,7 @@ body {
     width: 36%;
     a {
       padding: $verticalSpace/3 $gutter/2;
-      border-width:2px;
+      border:2px solid $white;
       background-color: $white;
       box-shadow: inset 0px 0px 0px 2px $blue;
       color:$blue;
@@ -118,11 +102,10 @@ body {
           width:auto; height:48px;
           padding:$verticalSpace/2 $gutter/2;
           box-sizing:border-box;
-          background-color: $white;
+          background-color: $black;
           border-radius: 2px;
-          border: 2px solid white;
-          box-shadow: inset 0px 0px 0px 2px $blue;
-          path {fill:$blue;}
+          @include smallFancyBorder($black);
+          path {fill:$white;}
         }
       }
     }
@@ -141,10 +124,20 @@ body {
   }
 }
 .page > footer {
-  ul li a:hover svg {
-    background-color: transparent;
-    box-shadow: none;
-    path {fill:$white;}
+  ul li {
+    &:nth-of-type(1) {
+      a:hover svg {background-color: $turq;}}
+    &:nth-of-type(2) {
+      a:hover svg {background-color: $blue;}}
+    &:nth-of-type(3) {
+      a:hover svg {background-color: $purple;}}
+    &:nth-of-type(4) {
+      a:hover svg {background-color: $red;}}
+    &:nth-of-type(5) {
+      a:hover svg {background-color: $orange;}}
+    &:nth-of-type(6) {
+      a:hover svg {background-color: $green;}}
+    
   }
 }
 
