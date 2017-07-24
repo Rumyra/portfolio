@@ -86,8 +86,15 @@ body {
   width: 100%;
   padding: $verticalSpace $gutter;
   display:flex; justify-content:space-between;
+  @include until($screenMedium) {
+    display: block;
+    text-align: center;
+  }
   p, ul {
       width:50%;
+      @include until($screenMedium) {
+        width:100%;
+      }
       // display: inline-block;
       // text-align: right;
   }
@@ -95,6 +102,10 @@ body {
   ul {
     @include clearListStyles;
     display: flex; justify-content:flex-end;
+    @include until($screenMedium) {
+      justify-content: center;
+      flex-wrap:wrap;
+    }
     li {
       a {
         border:none;
@@ -154,45 +165,3 @@ main::after {
   height: 0px;
   visibility: hidden;
 }
-
-/*2.2 Main content container*/
-
-
-// @include at-least($screenLarge) {
-
-//   .layout-sidebar {
-//     header[role="banner"],
-//     body > aside {
-//       width: 32%;
-//       float: left;
-//       text-align: right;
-//     }
-//     header[role="banner"] {
-//       nav {
-//         //due to @extends not being allowed within @includes this is just a copy from nav-block-vertical.
-//         & > ul {
-//           background-color: transparent;
-//           & > li > a {
-//             background-color: $blockNavBackgroundColour;
-//             &:hover { background-color: darken($blockNavBackgroundColour, 20%); }
-//           }
-//         }
-//         li {
-//           display: block;
-//           margin-bottom: $verticalSpace/4;
-//         }
-//         .nav-sub {
-//           display: block;
-//           position: static;
-//           border-width: 0px;
-//         }
-//       }
-//     }
-
-//     section[role="main"] {
-//       width: 67.5%;
-//       float: right;
-//     }
-//   }
-// }
-

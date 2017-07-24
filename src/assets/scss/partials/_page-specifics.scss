@@ -23,6 +23,9 @@ main {
       width:70%;
       margin-left: auto; margin-right: auto;
       text-align: justify;
+      @include until($screenSmall) {
+        width:100%;
+      }
     }
   } 
 }
@@ -35,19 +38,11 @@ main {
 
 .about-cv {
   overflow: auto;
-  display:grid; justify-content:space-between;
-  grid-template-columns: 49.5% 49.5%;
   section {
-    // width: 50%;
     padding:$verticalSpace $gutter;
     margin-bottom:2%;
-    // float: left;
     box-sizing: border-box;
-
-
-
     border:1px solid $white;
-    
     text-align:center;
 
     &:nth-of-type(6n-5) {
@@ -92,6 +87,33 @@ main {
       font-weight: bold;
     }
   }
+}
+
+
+// this is messy and I don't like it and blergh
+@supports (display:grid) {
+  .about-cv {
+    display:grid; justify-content:space-between;
+    grid-template-columns: 49.5% 49.5%;
+  }
+}
+@supports not (display:grid) {
+  .about-cv {
+    display: block;
+  }
+  .about-cv section {
+    width: 50%; min-height:450px;
+    float: left;
+  }
+}
+@include until($screenMedium) {
+  .about-cv {
+    display: block;
+    section {
+      width:100%; float:none;
+    }
+  }
+  
 }
 
 // portfolio
