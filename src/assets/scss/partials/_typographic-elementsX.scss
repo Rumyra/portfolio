@@ -2,26 +2,23 @@
 header {}
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: $verticalSpace/2;
+  font-family: $headerFont;
+  font-weight: bold;
   line-height: $headerLineHeight;
-  letter-spacing: 0;
-}
-h1, h2, h3 { font-family: $headerFont; font-style: italic; font-weight: normal;}
-h4, h5, h6 { font-weight: bold; letter-spacing: $letterSpacing; text-transform: uppercase;}
-
-h1 { font-size: $fontSize*3.2; }
-h2 {
-  position: relative;
-  font-size: $fontSize*2.4;
+  letter-spacing: $letterSpacing;
+  text-transform: uppercase;
 }
 
-h3 { font-size:$fontSize*1.9; }
-h4 { font-size:$fontSize*1.6; }
-h5 { font-size:$fontSize*1.4; }
+h1 { font-size: $fontSize*4.8; }
+h2 { font-size: $fontSize*3.2; }
+h3 { font-size:$fontSize*2.4; }
+h4 { font-size:$fontSize*1.8; }
+h5 { font-size:$fontSize*1.5; }
 h6 { font-size:$fontSize*1.2; }
 
 //2. PARAGRAPHS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 p {
-	margin: $verticalSpace/2 0px;
+	margin: 0px 0px $verticalSpace;
 	font-size: $fontSize;
   line-height: $lineHeight;
   letter-spacing: $letterSpacing;

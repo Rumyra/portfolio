@@ -1,6 +1,5 @@
 var Metalsmith  = require('metalsmith');
 var serve = require('metalsmith-serve');
-var watch = require('metalsmith-watch');
 var layouts = require('metalsmith-layouts');
 var sass = require('metalsmith-sass');
 var collections = require('metalsmith-collections');
@@ -53,14 +52,16 @@ Metalsmith(__dirname)
 
   .use(serve())
 
-  .use(
-    watch({
-      paths: {
-        '${source}/**/*': true,
-        'layouts/**/*': true,
-      }
-    })
-  )
+  // .use(metalsmithExpress())
+  // .use(
+  //   watch({
+  //     paths: {
+  //       '${source}/**/*': true,
+  //       'layouts/**/*': true,
+  //     },
+  //     livereload: true
+  //   })
+  // )
 
   .build(function(err, files) {
     if (err) { throw err; }

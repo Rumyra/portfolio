@@ -1,0 +1,57 @@
+.home {
+}
+
+.home {
+  .page-section {
+    height: 95vh;
+    box-sizing: border-box;
+  }
+}
+
+.page-section_list {
+  ul, dl {
+    margin:0px; padding:0px;
+    list-style: none;
+  }
+
+  li, dt {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.home-about {
+  padding: $verticalSpace*2 $gutter*2;
+  margin-top: 5vh;
+  background-color: $brand3;
+  @include gradient($brand3, lighten($brand3,5%), 180deg);
+  @include fancyBorder($white, $brand3);
+  color:$white;
+
+  .page-section_header {
+    h1 {
+      letter-spacing: 0em;
+      a {font-weight:bold;}
+    }
+  }
+}
+
+.home-cv {
+  padding: $verticalSpace*2 $gutter*2;
+  overflow: auto;
+
+
+  background-color: $brand2;
+  @include gradient($brand2, lighten($brand2,5%), 180deg);
+  @include fancyBorder($brand6, $brand2);
+  color: $brand6;
+
+  .page-section_list {
+    width: 40%; float: left;
+  }
+
+}
+
+
+
+

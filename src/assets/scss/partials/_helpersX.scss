@@ -50,19 +50,19 @@
   ;
 }
 
-@mixin fancyBorder($colour) {
-  border: 1px solid $white;
+@mixin fancyBorder($bordColour, $bkColour) {
+  border: 1px solid $bordColour;
   box-shadow:
-    inset 0px 0px 0px 2px $colour,
-    inset 0px 0px 0px 8px transparentize($white,0.7)
+    inset 0px 0px 0px 3px $bkColour,
+    inset 0px 0px 0px 10px transparentize($bordColour,0.6)
   ;
 }
 
-@mixin smallFancyBorder($colour) {
-  border: 1px solid $white;
+@mixin smallFancyBorder($bordColour, $bkColour) {
+  border: 1px solid $bordColour;
   box-shadow:
-    inset 0px 0px 0px 1px $colour,
-    inset 0px 0px 0px 4px transparentize($white,0.7)
+    inset 0px 0px 0px 2px $bkColour,
+    inset 0px 0px 0px 5px transparentize($bordColour,0.6)
   ;
 }
 

@@ -116,7 +116,7 @@ input[type="submit"] { float: right; }
 // 2.5 Focus styles
 input:focus,
 select:focus,
-textarea:focus { border-color: $red; }
+textarea:focus { border-color: $errorColour; }
 // 2.6 Required styles
 .input-required label:after {
   display: inline-block;
@@ -127,20 +127,20 @@ textarea:focus { border-color: $red; }
 //3. Form feedback ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .input-error input,
 .input-error select,
-.input-error textarea { border-color: $red; }
+.input-error textarea { border-color: $errorColour; }
 
 .input-success input,
 .input-success select,
-.input-success textarea { border-color: $green; }
+.input-success textarea { border-color: $successColour; }
 
 .form-error, .form-success {
   padding: $verticalSpace/2 $gutter;
 }
 .form-error {
-  border: 2px solid $red;
-  color: $red;
+  border: 2px solid $errorColour;
+  color: $errorColour;
 }
 .form-success {
-  border: 2px solid $green;
-  color: $green;
+  border: 2px solid $successColour;
+  color: $successColour;
 }

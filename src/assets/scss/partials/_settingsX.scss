@@ -1,20 +1,25 @@
-$vanilla: hsla(48, 42%, 95%, 1.0);
-$slate: hsla(180, 5%, 31%, 1.0);
+$blue: hsla(213, 35%, 25%, 1);
+$purple: hsla(302, 15%, 39%, 1);
+$pink: hsla(339, 37%, 55%, 1);
+$peach: hsla(359, 41%, 79%, 1);
+$taupe: hsla(26, 27%, 85%, 1);
+$cream: hsla(47, 45%, 95%, 1);
+$black: hsla(194, 74%, 11%, 1);
+$offWhite: hsla(47, 31%, 98%, 1);
+$brightWhite: hsla(60, 33%, 99%, 1);
 
-$blue: hsla(238, 28%, 37%, 1.0);
-$turq: hsla(167, 43%, 43%, 1.0);
-$green: hsla(65, 42%, 45%, 1.0);
-$orange: hsla(35, 55%, 48%, 1.0);
-$red: hsla(354, 44%, 48%, 1.0);
-$purple: hsla(324, 32%, 37%, 1.0);;
+$brand1: $cream;
+$brand2: $taupe;
+$brand3: $peach;
+$brand4: $pink;
+$brand5: $purple;
+$brand6: $blue;
 
-$grey: $slate;
-$darkGrey: darken($grey, 20%);
-$lightGrey: lighten($grey, 20%);
-$extraLightGrey: lighten($grey, 40%);
+$white: $offWhite;
+$black: $black;
 
-$white: lighten($vanilla,10%);
-$black: darken($slate,20%);
+$errorColour: $pink;
+$successColour: $blue;
 
 //2.2 Font imports & settings
 @include font-face('Font Awesome', '../fonts/fontAwesome/fontawesome-webfont');
@@ -27,7 +32,7 @@ $fontSize:1em !default;
 $lineHeight:1.8 !default;
 $letterSpacing:0.1em;
 
-$headerFont: 'Great Vibes', cursive !default;
+$headerFont: 'Khula', Helvetica, Arial, sans-serif !default;
 $headerLineHeight:1.5;
 
 $iconFont:'Font Awesome', monospace !default;

@@ -9,12 +9,10 @@
 // 1. HTML & BODY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 html {}
 body {
-  overflow: auto; padding:6px;
-  background-color: $black;
-  @include gradient($black, lighten($black, 10%), 0deg);
+  background-color: $brand1;
   font-family: $font;
   font-size: 100%;
-  color: $white;
+  color: $black;
   @include at-least($screenXlarge) { font-size: 112%; }
   @include until($screenMedium) { font-size: 90%; }
   @include until($screenSmall) { font-size: 84%; }
@@ -25,52 +23,38 @@ body {
 // 2. SITE STRUCTURE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 2.1 Main header, aside & footer
 // Default layout is full width add .layout-sidebar for large screens to have side nav
-.page {
-  display: flex; flex-direction: column;
-  margin: 0px; padding: 0px;
-  box-sizing: border-box;
-  @include fancyBorder($slate);
-}
 
-.page > header,
-.page > footer {
-  padding: $verticalSpace $gutter $verticalSpace/2;
-  box-sizing:border-box;
-  flex: none;
-}
+.main-nav {
+  position: fixed; top:0px; left:0px;
+  width:100%; height:5vh;
+  display:table;
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: $verticalSpace/2 $gutter/2 $verticalSpace/3;
+    box-sizing: border-box;
 
-.page > header {
-  overflow: hidden;
-  & > section {
-    float:left;
-    h1 {margin-bottom:0px;}
-    p {margin:0px;}
-  }
-  & > nav {
-    float:right;
-    display:flex; justify-content:flex-end;
-    width: 36%;
-    a {
-      padding: $verticalSpace/3 $gutter/2;
-      border:2px solid $white;
-      background-color: $white;
-      box-shadow: inset 0px 0px 0px 2px $blue;
-      color:$blue;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
+    border:2px solid $white;
+    background-color: $white;
+    box-shadow: inset 0px 0px 0px 2px $brand2;
+
+    color:$brand2; font-weight: bold;
+    text-transform: uppercase; text-decoration:none;
+    text-align: center; line-height:1;
+    
   }
 }
+
 .portfolio .page > header {
   & > nav a {
-    box-shadow: inset 0px 0px 0px 2px $turq;
-    color:$turq;
+    box-shadow: inset 0px 0px 0px 2px $brand3;
+    color:$brand3;
   }
 }
 .contact .page > header {
   & > nav a {
-    box-shadow: inset 0px 0px 0px 2px $slate;
-    color:$slate;
+    box-shadow: inset 0px 0px 0px 2px $brand4;
+    color:$brand4;
   }
 }
 .page > header {
@@ -115,7 +99,7 @@ body {
           box-sizing:border-box;
           background-color: $black;
           border-radius: 2px;
-          @include smallFancyBorder($black);
+          // @include smallFancyBorder($black);
           path {fill:$white;}
         }
       }
@@ -124,30 +108,30 @@ body {
 }
 .portfolio .page > footer {
   ul li a svg {
-    box-shadow: inset 0px 0px 0px 2px $turq;
-    path {fill:$turq;}
+    box-shadow: inset 0px 0px 0px 2px $brand2;
+    path {fill:$brand2;}
   }
 }
 .contact .page > footer {
   ul li a svg {
-    box-shadow: inset 0px 0px 0px 2px $slate;
-    path {fill:$slate;}
+    box-shadow: inset 0px 0px 0px 2px $brand3;
+    path {fill:$brand3;}
   }
 }
 .page > footer {
   ul li {
     &:nth-of-type(1) {
-      a:hover svg {background-color: $turq;}}
+      a:hover svg {background-color: $brand1;}}
     &:nth-of-type(2) {
-      a:hover svg {background-color: $blue;}}
+      a:hover svg {background-color: $brand2;}}
     &:nth-of-type(3) {
-      a:hover svg {background-color: $purple;}}
+      a:hover svg {background-color: $brand3;}}
     &:nth-of-type(4) {
-      a:hover svg {background-color: $red;}}
+      a:hover svg {background-color: $brand4;}}
     &:nth-of-type(5) {
-      a:hover svg {background-color: $orange;}}
+      a:hover svg {background-color: $brand5;}}
     &:nth-of-type(6) {
-      a:hover svg {background-color: $green;}}
+      a:hover svg {background-color: $brand6;}}
     
   }
 }

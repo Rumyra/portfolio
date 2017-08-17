@@ -11,16 +11,18 @@
     "metalsmith-default-values": "^1.0.1",
     "metalsmith-discover-partials": "^0.1.0",
     "metalsmith-drafts": "0.0.1",
+    "metalsmith-express": "^0.1.0",
     "metalsmith-layouts": "^1.8.1",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-sass": "^1.4.0",
     "metalsmith-serve": "0.0.7",
-    "metalsmith-watch": "^1.0.3"
+    "metalsmith-watch": "^1.0.3",
+    "nodemon": "^1.11.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
