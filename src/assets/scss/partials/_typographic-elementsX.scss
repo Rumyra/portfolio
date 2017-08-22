@@ -56,7 +56,7 @@ a {
   display:inline-block;
   font-weight:normal; font-size:$fontSize;
   text-decoration:underline; letter-spacing:$letterSpacing;
-  color: $white;
+  color: $white; letter-spacing: $letterSpacing;
 }
 // normalise font size and remove underline for headers
 p a, address a, ul a, ol a, dl a, menu a { font-size: 100%; }

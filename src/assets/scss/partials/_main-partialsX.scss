@@ -45,31 +45,10 @@ body {
   }
 }
 
-.portfolio .page > header {
-  & > nav a {
-    box-shadow: inset 0px 0px 0px 2px $brand3;
-    color:$brand3;
-  }
-}
-.contact .page > header {
-  & > nav a {
-    box-shadow: inset 0px 0px 0px 2px $brand4;
-    color:$brand4;
-  }
-}
-.page > header {
-  & > nav a:hover, & > nav a.nav-active {
-    background-color:transparent;
-    box-shadow:none;
-    color: $white;
-  }
-}
-
-
-.page > footer {
-  width: 100%;
-  padding: $verticalSpace $gutter;
+footer {
+  padding: $verticalSpace 0px 0px;
   display:flex; justify-content:space-between;
+  border-top: 2px solid $brand2;
   @include until($screenMedium) {
     display: block;
     text-align: center;
@@ -79,10 +58,7 @@ body {
       @include until($screenMedium) {
         width:100%;
       }
-      // display: inline-block;
-      // text-align: right;
   }
-  // p {padding-right: $verticalSpace;}
   ul {
     @include clearListStyles;
     display: flex; justify-content:flex-end;
@@ -94,47 +70,42 @@ body {
       a {
         border:none;
         svg {
-          width:auto; height:48px;
+          width:auto; height:54px;
           padding:$verticalSpace/2 $gutter/2;
           box-sizing:border-box;
-          background-color: $black;
+          background-color: $brand6;
           border-radius: 2px;
-          // @include smallFancyBorder($black);
-          path {fill:$white;}
+          @include smallFancyBorder($brand2, $brand6);
+          path {fill:$brand2;}
+        }
+        &:hover {
+          svg {
+            background-color:$brand2;
+            path {fill:$brand6;}
+          }
         }
       }
     }
   }
 }
-.portfolio .page > footer {
-  ul li a svg {
-    box-shadow: inset 0px 0px 0px 2px $brand2;
-    path {fill:$brand2;}
-  }
-}
-.contact .page > footer {
-  ul li a svg {
-    box-shadow: inset 0px 0px 0px 2px $brand3;
-    path {fill:$brand3;}
-  }
-}
-.page > footer {
-  ul li {
-    &:nth-of-type(1) {
-      a:hover svg {background-color: $brand1;}}
-    &:nth-of-type(2) {
-      a:hover svg {background-color: $brand2;}}
-    &:nth-of-type(3) {
-      a:hover svg {background-color: $brand3;}}
-    &:nth-of-type(4) {
-      a:hover svg {background-color: $brand4;}}
-    &:nth-of-type(5) {
-      a:hover svg {background-color: $brand5;}}
-    &:nth-of-type(6) {
-      a:hover svg {background-color: $brand6;}}
+
+// footer {
+//   ul li {
+//     &:nth-of-type(1) {
+//       a:hover svg {background-color: $brand1;}}
+//     &:nth-of-type(2) {
+//       a:hover svg {background-color: $brand2;}}
+//     &:nth-of-type(3) {
+//       a:hover svg {background-color: $brand3;}}
+//     &:nth-of-type(4) {
+//       a:hover svg {background-color: $brand4;}}
+//     &:nth-of-type(5) {
+//       a:hover svg {background-color: $brand5;}}
+//     &:nth-of-type(6) {
+//       a:hover svg {background-color: $brand6;}}
     
-  }
-}
+//   }
+// }
 
 main {
   position: relative;
