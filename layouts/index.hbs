@@ -196,11 +196,11 @@
         </fieldset>
       </form>
     </section>
-
+ 
     <section class="page-section_copy">
       <h3>Availability</h3>
       <p>I have some time for work coming up in Q4 this year</p>
-      <p>Unfortunetly I'm all booked up for conferences until November, but have time past that.</p> 
+      <p>Unfortunately I'm all booked up for conferences until November, but have time past that.</p> 
 
       {{!-- If you want to find out more about what I talk about and expect <a href="">you can read more on the full contact page here</a>.</p> --}}
     </section>
@@ -223,24 +223,27 @@
 const homeSections = document.querySelectorAll('.page-section');
 const mainNav = document.querySelector('.main-nav');
 const links = document.querySelectorAll('.main-nav a');
-console.log(links);
 var bPoints = [0];
 // TODO generate this
-var sectionInfo = {
+const sectionInfo = {
   about: {
     textCol: 'hsla(60, 33%, 99%, 1)',
+    boxSh: 'hsla(60, 33%, 99%, 0.4)',
     bkCol: 'hsla(359, 41%, 79%, 1)'
   },
   cv: {
     textCol: 'hsla(213, 35%, 25%, 1)',
+    boxSh: 'hsla(213, 35%, 25%, 0.4)',
     bkCol: 'hsla(26, 27%, 85%, 1)'
   },
   talk: {
     textCol: 'hsla(302, 15%, 39%, 1)',
+    boxSh: 'hsla(302, 15%, 39%, 0.4)',
     bkCol: 'hsla(47, 45%, 95%, 1)'
   },
   contact: {
     textCol: 'hsla(26, 27%, 85%, 1)',
+    boxSh: 'hsla(26, 27%, 85%, 0.4)',
     bkCol: 'hsla(213, 35%, 25%, 1)'
   }
 };
@@ -277,14 +280,18 @@ function doSomething(scroll_pos) {
       mainNav.style.backgroundColor = sectionInfo[homeSections[i].dataset.section].bkCol;
 
       for (j=0; j<links.length; j++) {
-        links[i].style.borderColor = sectionInfo[homeSections[i].dataset.section].textCol;
-        links[i].style.color = sectionInfo[homeSections[i].dataset.section].textCol;
-        links[i].style.boxShadow = 'inset 0px 0px 0px 2px '+sectionInfo[homeSections[i].dataset.section].bkCol+', inset 0px 0px 0px 5px transparentize('+sectionInfo[homeSections[i].dataset.section].textCol+',0.6)';
+        links[j].style.borderColor = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[j].style.color = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[j].style.boxShadow = 'inset 0px 0px 0px 2px '+sectionInfo[homeSections[i].dataset.section].bkCol+', inset 0px 0px 0px 5px '+sectionInfo[homeSections[i].dataset.section].boxSh;
       }
 
     }
   }
   
+}
+
+function styleLinks(sectionEls) {
+
 }
 
 window.addEventListener('scroll', function(e) {
