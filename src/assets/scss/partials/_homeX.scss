@@ -19,7 +19,7 @@
 }
 
 .home-about {
-  margin-top: 5vh; height: 95vh;
+  margin-top: 5vh;
   background-color: $brand3;
   @include gradient($brand3, lighten($brand3,5%), 180deg);
   @include fancyBorder($white, $brand3);
@@ -54,6 +54,11 @@
       margin-right:0px;
       margin-left:3%;
     }
+    @include until($screenSmall) {
+      width: 100%; float: none;
+      margin: 0px;
+      &:nth-of-type(2n) {margin:0px;}
+    }
   }
 
 }
@@ -73,6 +78,11 @@
     &:nth-of-type(2n) {
       margin-right:0px;
       margin-left:3%;
+    }
+    @include until($screenSmall) {
+      width: 100%; float: none;
+      margin: 0px;
+      &:nth-of-type(2n) {margin:0px;}
     }
   }
 

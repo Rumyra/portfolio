@@ -23,14 +23,15 @@
 
   <nav class="main-nav page-section_nav">
     <a href="/" class="nav-active">RJ</a>
-    <a href="/cv/">CV</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     {{!-- <a href="/portfolio/">Portfolio</a> --}}
-    <a href="/speaking-writing/">Speaking & Writing</a>
-    <a href="/contact/">Get In Touch</a>
-    <a href="/contact/" rel="external">Blog</a>
+    <a href="#speaking">Speaking & Writing</a>
+    <a href="#contact">Get In Touch</a>
+    <a href="http://rumyrashead.com" rel="external">Blog</a>
   </nav>
 
-  <header class="page-section home-about" data-section="about">
+  <header class="page-section home-about" id="about" data-section="about">
 
     <section class="page-section_header">
       <h1><a href="/">Ruth John</a></h1>
@@ -43,22 +44,10 @@
     </section>
   </header>
 
-  <div class="page-section home-cv" data-section="cv">
+  <div class="page-section home-cv" id="experience" data-section="cv">
     <header class="page-section_header">
       <h2>Experience</h2>
     </header>
-
-    {{!-- <section class="page-section_list">
-      <h3>Key Skills</h3>
-      <ul>
-        <li>Web Development</li>
-        <li>Creative Coding</li>
-        <li>Audio & MIDI Web APIs</li>
-        <li>Data Visualisation</li>
-        <li>Public Speaking</li>
-        <li>Writing</li>
-      </ul>
-    </section> --}}
 
     <section class="page-section_list">
       <h3>Work</h3>
@@ -85,30 +74,9 @@
       </dl>
     </section>
 
-    {{!-- <section class="page-section_cta">
-      <a href="/cv/">View full CV</a>
-    </section> --}}
   </div><!--cv-->
 
-  {{!-- <div class="page-section home-portfolio">
-    <header class="page-section_header">
-      <h2>Portfolio</h2>
-    </header>
-
-    <section class="page-section_list">
-      <h3>Previous Work</h3>
-      <ul>
-        <li>Coming Soon</li>
-      </ul>
-      <p>Why not ask Ruth to come in for a chat and she can show off some of her latest projects. In the meantime, checkout <a href="https://github.com/Rumyra">her Github page.</a></p>
-    </section>
-
-    <section class="page-section_cta">
-      <a href="/portfolio/">See all work</a>
-    </section>
-  </div> --}}
-
-  <div class="page-section home-talks" data-section="talk">
+  <div class="page-section home-talks" id="speaking" data-section="talk">
     <header class="page-section_header">
       <h2>Talks & Articles</h2>
     </header>
@@ -155,59 +123,29 @@
 
         <dt>24 ways</dt>
         <dd><a href="https://24ways.org/2015/bringing-your-code-to-the-streets/">Bringing Your Code To The Streets</a></dd>
-        {{!-- <dt>JS Conf Asia</dt>
-        <dd><a href="https://www.youtube.com/watch?v=Ody93kpAjAY">Live JS Show</a></dd> --}}
       </dl>
       <p>To see a full list of Ruth's previous talks check out <a href="http://lanyrd.com/profile/rumyra/">her Lanyrd page</a></p>
     </section>
 
-    {{!-- <section class="page-section_cta">
-      <a href="/talks-articles/">All Talks & Articles</a>
-    </section> --}}
 
   </div>
 
-  <div class="page-section home-contact" data-section="contact">
+  <div class="page-section home-contact" id="contact" data-section="contact">
     <header class="page-section_header">
       <h2>Get In Touch</h2>
     </header>
 
     <section class="page-section_copy">
       <p>I'm always keen to talk about interesting projects and delighted to hear about talking opportunities.</p>
-      <p>You can get in touch by <a href="">dropping me an email</a> or filling in the form below.</p>
-    </section>
-
-    <section class="page-section_form">
-      <form method="post" action="/">
-        <fieldset><legend>Send message</legend>
-          <div class="form-field">
-            <label for="full-name">Full Name</label>
-            <input type="text" name="full-name" id="full-name" placeholder="Joanne Bloggs" />
-          </div>
-          <div class="form-field">
-            <label for="email-input">Email</label>
-            <input type="email" name="email-input" id="email-input" placeholder="example@domain.com" />
-          </div>
-          <div class="form-field">
-            <label for="message-input">Message</label>
-            <textarea name="message-input" id="message-input"></textarea>
-          </div>
-          <input type="submit" value="Send" />
-        </fieldset>
-      </form>
+      <p>You can get in touch by <a href="">dropping me an email</a>.</p>
     </section>
 
     <section class="page-section_copy">
       <h3>Availability</h3>
       <p>I have some time for work coming up in Q4 this year</p>
-      <p>Unfortunetly I'm all booked up for conferences until November, but have time past that.</p> 
+      <p>unfortunately I'm all booked up for conferences until November, but have time past that.</p> 
 
-      {{!-- If you want to find out more about what I talk about and expect <a href="">you can read more on the full contact page here</a>.</p> --}}
     </section>
-
-    {{!-- <section class="page-section_cta">
-      <a href="/contact/">Find Out More</a>
-    </section> --}}
 
     {{> footer }}
 
@@ -223,70 +161,58 @@
 const homeSections = document.querySelectorAll('.page-section');
 const mainNav = document.querySelector('.main-nav');
 const links = document.querySelectorAll('.main-nav a');
-console.log(links);
 var bPoints = [0];
 // TODO generate this
-var sectionInfo = {
+const sectionInfo = {
   about: {
     textCol: 'hsla(60, 33%, 99%, 1)',
+    boxSh: 'hsla(60, 33%, 99%, 0.4)',
     bkCol: 'hsla(359, 41%, 79%, 1)'
   },
   cv: {
     textCol: 'hsla(213, 35%, 25%, 1)',
+    boxSh: 'hsla(213, 35%, 25%, 0.4)',
     bkCol: 'hsla(26, 27%, 85%, 1)'
   },
   talk: {
     textCol: 'hsla(302, 15%, 39%, 1)',
+    boxSh: 'hsla(302, 15%, 39%, 0.4)',
     bkCol: 'hsla(47, 45%, 95%, 1)'
   },
   contact: {
     textCol: 'hsla(26, 27%, 85%, 1)',
+    boxSh: 'hsla(26, 27%, 85%, 0.4)',
     bkCol: 'hsla(213, 35%, 25%, 1)'
   }
 };
-
 for (i=0; i<homeSections.length; i++) {
   var boxH = homeSections[i].getBoundingClientRect().height;
-
   var newPoint = bPoints[bPoints.length - 1]+boxH;
-
   bPoints.push(newPoint);
 }
-
-
 // if scroll is inbetween vh height and bottom of section
-
 // change class
-
 function updateBPoints() {
-
 }
-
-
-
 // Reference: http://www.html5rocks.com/en/tutorials/speed/animations/
-
 var last_known_scroll_position = 0;
 var ticking = false;
-
 function doSomething(scroll_pos) {
   // do something with the scroll position
   for (i=0; i<homeSections.length; i++) { 
     if ( (bPoints[i] < scroll_pos) && (scroll_pos < bPoints[i+1]) ) {
-
       mainNav.style.backgroundColor = sectionInfo[homeSections[i].dataset.section].bkCol;
-
       for (j=0; j<links.length; j++) {
-        links[i].style.borderColor = sectionInfo[homeSections[i].dataset.section].textCol;
-        links[i].style.color = sectionInfo[homeSections[i].dataset.section].textCol;
-        links[i].style.boxShadow = 'inset 0px 0px 0px 2px '+sectionInfo[homeSections[i].dataset.section].bkCol+', inset 0px 0px 0px 5px transparentize('+sectionInfo[homeSections[i].dataset.section].textCol+',0.6)';
+        links[j].style.borderColor = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[j].style.color = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[j].style.boxShadow = 'inset 0px 0px 0px 2px '+sectionInfo[homeSections[i].dataset.section].bkCol+', inset 0px 0px 0px 5px '+sectionInfo[homeSections[i].dataset.section].boxSh;
       }
-
     }
   }
   
 }
-
+function styleLinks(sectionEls) {
+}
 window.addEventListener('scroll', function(e) {
   last_known_scroll_position = window.scrollY;
   if (!ticking) {

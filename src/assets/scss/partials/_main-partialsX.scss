@@ -15,7 +15,7 @@ body {
   color: $black;
   @include at-least($screenXlarge) { font-size: 112%; }
   @include until($screenMedium) { font-size: 90%; }
-  @include until($screenSmall) { font-size: 84%; }
+  @include until($screenSmall) { font-size: 80%; }
 }
 // remember to define focus styles!
 :focus { outline: 0; }
