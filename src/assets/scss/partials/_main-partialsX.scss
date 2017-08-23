@@ -9,7 +9,7 @@
 // 1. HTML & BODY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 html {}
 body {
-  background-color: $brand1;
+  background-color: $white;
   font-family: $font;
   font-size: 100%;
   color: $black;
@@ -28,17 +28,16 @@ body {
   position: fixed; top:0px; left:0px;
   width:100%; height:5vh;
   display:table;
+  background-color: $brand3;
   a {
     display: table-cell;
     vertical-align: middle;
     padding: $verticalSpace/2 $gutter/2 $verticalSpace/3;
     box-sizing: border-box;
 
-    border:2px solid $white;
-    background-color: $white;
-    box-shadow: inset 0px 0px 0px 2px $brand2;
-
-    color:$brand2; font-weight: bold;
+    @include smallFancyBorder($white, $brand3);
+    
+    color:$white; font-weight: bold;
     text-transform: uppercase; text-decoration:none;
     text-align: center; line-height:1;
     

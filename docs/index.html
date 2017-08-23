@@ -17,11 +17,7 @@
   <meta name="description" content="">
 
   <link type="text/css" href="assets/css/style.css" rel="stylesheet" media="screen" />
-  <!-- <link type="text/css" href="/assets/stylesheets/styleguide_specifics.css" rel="stylesheet" media="screen" /> -->
 
-  <!--include if you want modenizr (rest of scripts just before </body>)
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  -->
 </head>
 <body class="home"><div class="wrapper">
 
@@ -33,7 +29,7 @@
     <a href="/contact/" rel="external">Blog</a>
   </nav>
 
-  <header class="page-section home-about">
+  <header class="page-section home-about" data-section="about">
 
     <section class="page-section_header">
       <h1><a href="/">Ruth John</a></h1>
@@ -50,7 +46,7 @@
     </section>
   </header>
 
-  <div class="page-section home-cv">
+  <div class="page-section home-cv" data-section="cv">
     <header class="page-section_header">
       <h2>Experience</h2>
     </header>
@@ -84,7 +80,7 @@
   </div><!--cv-->
 
 
-  <div class="page-section home-talks">
+  <div class="page-section home-talks" data-section="talk">
     <header class="page-section_header">
       <h2>Talks & Articles</h2>
     </header>
@@ -138,7 +134,7 @@
 
   </div>
 
-  <div class="page-section home-contact">
+  <div class="page-section home-contact" data-section="contact">
     <header class="page-section_header">
       <h2>Get In Touch</h2>
     </header>
@@ -221,5 +217,90 @@
 
   
 
-</div></body>
+</div>
+
+<script type="text/javascript">
+
+// get y position of divs
+const homeSections = document.querySelectorAll('.page-section');
+const mainNav = document.querySelector('.main-nav');
+const links = document.querySelectorAll('.main-nav a');
+console.log(links);
+var bPoints = [0];
+// TODO generate this
+var sectionInfo = {
+  about: {
+    textCol: 'hsla(60, 33%, 99%, 1)',
+    bkCol: 'hsla(359, 41%, 79%, 1)'
+  },
+  cv: {
+    textCol: 'hsla(213, 35%, 25%, 1)',
+    bkCol: 'hsla(26, 27%, 85%, 1)'
+  },
+  talk: {
+    textCol: 'hsla(302, 15%, 39%, 1)',
+    bkCol: 'hsla(47, 45%, 95%, 1)'
+  },
+  contact: {
+    textCol: 'hsla(26, 27%, 85%, 1)',
+    bkCol: 'hsla(213, 35%, 25%, 1)'
+  }
+};
+
+for (i=0; i<homeSections.length; i++) {
+  var boxH = homeSections[i].getBoundingClientRect().height;
+
+  var newPoint = bPoints[bPoints.length - 1]+boxH;
+
+  bPoints.push(newPoint);
+}
+
+
+// if scroll is inbetween vh height and bottom of section
+
+// change class
+
+function updateBPoints() {
+
+}
+
+
+
+// Reference: http://www.html5rocks.com/en/tutorials/speed/animations/
+
+var last_known_scroll_position = 0;
+var ticking = false;
+
+function doSomething(scroll_pos) {
+  // do something with the scroll position
+  for (i=0; i<homeSections.length; i++) { 
+    if ( (bPoints[i] < scroll_pos) && (scroll_pos < bPoints[i+1]) ) {
+
+      mainNav.style.backgroundColor = sectionInfo[homeSections[i].dataset.section].bkCol;
+
+      for (j=0; j<links.length; j++) {
+        links[i].style.borderColor = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[i].style.color = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[i].style.boxShadow = 'inset 0px 0px 0px 2px '+sectionInfo[homeSections[i].dataset.section].bkCol+', inset 0px 0px 0px 5px transparentize('+sectionInfo[homeSections[i].dataset.section].textCol+',0.6)';
+      }
+
+    }
+  }
+  
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      ticking = false;
+    });
+  }
+  ticking = true;
+});
+
+</script>
+
+</body>
 </html>
