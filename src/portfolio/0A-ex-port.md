@@ -1,15 +1,18 @@
 ---
-collection: workItem
+collection: portfolio
 title: CSS Day Talk
+platform: null
 location: Compagnietheater, Amsterdam
 latLong:
   - lat: 52
     long: 3
 dateFrom: 2017-06-15
 dateTo: 2017-06-16
+
 url: https://cssday.nl/2017
 github: null
 twitter: null
+
 quote:
   - q: Hello
     cite: Me
