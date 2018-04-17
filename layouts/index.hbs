@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--meta content-->
-  
+
   <meta name="author" content="Ruth John (@rumyra)">
   <meta name="dcterms.rightsHolder" content="Built by Ruth John, United Kingdom, 2017">
   <title>{{ title }}</title>
@@ -30,7 +30,7 @@
     {{!-- <a href="/portfolio/">Portfolio</a> --}}
     <a href="#speaking">Speaking & Writing</a>
     <a href="#contact">Get In Touch</a>
-    <a href="http://rumyrashead.com" rel="external">Blog</a>
+    <a href="http://blog.rumyra.com" rel="external">Blog</a>
   </nav>
 
   <!-- "Ruth once taught me what CSS was good for. Now I hardly ever use <blink> tags." Terence Eden, @edent, ex-collegue, now friend -->
@@ -58,6 +58,8 @@
     <section class="page-section_list">
       <h3>Work</h3>
       <dl>
+        <dt>Current</dt>
+        <dd>I am currently available for speaking engagements & freelance projects, so please <a href="mailto:sayhello@rumyrashead.com">get in touch</a></dd>
         <dt>Sept '16 - Ongoing</dt>
         <dd>Front End Instructor for <a href="https://developme.training/">DevelopMe</a></dd>
         <dt>Jan '17 - April '17</dt>
@@ -78,7 +80,7 @@
         <dt>Bath Digital Festival</dt>
         <dd>Member of the board of directors for <a href="https://bathdigitalfestival.co.uk/">Bath Digital Festival</a></dd>
       </dl>
-      <p>Read about Ruth's other things she gets up to <a href="http://rumyrashead.com">over on her blog</a></p>
+      <p>Read about Ruth's other things she gets up to <a href="http://blog.rumyra.com">over on her blog</a></p>
     </section>
 
   </div><!--cv-->
@@ -95,29 +97,38 @@
     <section class="page-section_list">
       <h3>Upcoming</h3>
       <dl>
-        <dt>ColdFront</dt>
-        <dd><a href="https://2017.coldfront.co/">{ Live : JS } Making Music with JavaScript</a></dd>
+        <dt>Women Tech Makers</dt>
+        <dd><a href="https://www.womentechmakers.com/iwd18/london-18">Web Expectations: New things on the web you might not know about</a></dd>
 
-        <dt>Refresh</dt>
-        <dd><a href="http://refresh.rocks/">How To Be A Web A/V Artist</a></dd>
+        <dt>JS Oxford</dt>
+        <dd><a href="https://2017.coldfront.co/">New talk on web workers and worklets</a></dd>
 
-        <dt>Front End Connect</dt>
-        <dd><a href="http://frontend-con.io/">Closing Keynote</a></dd>
+        <dt>Bath Ruby</dt>
+        <dd><a href="https://2017.coldfront.co/">Compare for Bath Ruby Conference</a></dd>
 
-        <dt>JSConf Budapest</dt>
-        <dd><a href="http://jsconfbp.com/">{ Live : JS } Live Show</a></dd>
-
-        <dt>Ableton's Loop Conference</dt>
-        <dd><a href="https://loop.ableton.com/2017/">State of Audio on the Web</a></dd>
-        
       </dl>
-      
+
     </section>
 
     <section class="page-section_list">
       <h3>Recent</h3>
       <dl>
-        <dt>CSS Day</dt>
+        <dt>Ableton's Loop Conference</dt>
+        <dd><a href="https://loop.ableton.com/2017/">State of Audio on the Web</a></dd>
+
+        <dt>JSConf Budapest</dt>
+        <dd><a href="http://jsconfbp.com/">{ Live : JS } Live Show</a></dd>
+
+        <dt>Front End Connect</dt>
+        <dd><a href="http://frontend-con.io/">Closing Keynote</a></dd>
+
+        <dt>Refresh</dt>
+        <dd><a href="http://refresh.rocks/">How To Be A Web A/V Artist</a></dd>
+
+        <dt>ColdFront</dt>
+        <dd><a href="https://2017.coldfront.co/">{ Live : JS } Making Music with JavaScript</a></dd>
+
+        <!-- <dt>CSS Day</dt>
         <dd><a href="https://cssday.nl/2017">Web Audio API with a little MIDI</a></dd>
 
         <dt>JS Conf EU</dt>
@@ -134,7 +145,7 @@
 
         <dt>24 ways</dt>
         <dd><a href="https://24ways.org/2015/bringing-your-code-to-the-streets/">Bringing Your Code To The Streets</a></dd>
-      </dl>
+      </dl> -->
       <p>To see a full list of Ruth's previous talks check out <a href="http://lanyrd.com/profile/rumyra/">her Lanyrd page</a></p>
     </section>
 
@@ -154,16 +165,14 @@
 
     <section class="page-section_copy">
       <h3>Availability</h3>
-      <p>I have some time for work coming up in Q4 this year</p>
-      <p>Unfortunately I'm all booked up for conferences until November, but have time past that.</p> 
-
+      <p>I have time for work, speaking engagements and workshops this year. There's loads of upcoming tech I'm really excited about, <a href="mailto:sayhello@rumyrashead.com">send me an email</a> and we'll talk!</p>
     </section>
 
     {{> footer }}
 
   </div><!-- contact -->
 
-  
+
 
 </div>
 
@@ -211,7 +220,7 @@ var last_known_scroll_position = 0;
 var ticking = false;
 function doSomething(scroll_pos) {
   // do something with the scroll position
-  for (i=0; i<homeSections.length; i++) { 
+  for (i=0; i<homeSections.length; i++) {
     if ( (bPoints[i] < scroll_pos) && (scroll_pos < bPoints[i+1]) ) {
       mainNav.style.backgroundColor = sectionInfo[homeSections[i].dataset.section].bkCol;
       for (j=0; j<links.length; j++) {
@@ -221,7 +230,7 @@ function doSomething(scroll_pos) {
       }
     }
   }
-  
+
 }
 function styleLinks(sectionEls) {
 }
