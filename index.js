@@ -7,6 +7,7 @@ var markdown = require('metalsmith-markdown');
 var drafts = require('metalsmith-drafts');
 var partials = require('metalsmith-discover-partials');
 var permalinks  = require('metalsmith-permalinks');
+var dataLoader  = require('metalsmith-data-loader');
 
 Metalsmith(__dirname)
   .metadata({
@@ -31,6 +32,8 @@ Metalsmith(__dirname)
     directory: './layouts/partials/',
     pattern: /\.hbs$/
   }))
+
+  .use(dataLoader({}))
 
   .use(drafts())
   .use(markdown())

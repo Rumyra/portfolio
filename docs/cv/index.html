@@ -13,7 +13,7 @@
 
   <meta name="author" content="Ruth John (@rumyra)">
   <meta name="dcterms.rightsHolder" content="Built by Ruth John, United Kingdom, 2017">
-  <title>My Things | Ruth John</title>
+  <title>CV | Ruth John</title>
   <meta name="description" content="">
 
   <link type="text/css" href="../assets/css/style.css" rel="stylesheet" media="screen" />
@@ -23,41 +23,38 @@
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   -->
 </head>
-<body class="portfolio"><div>
-  <div class="page" data-page="portfolio">
-    <header>
-      <section>
-        <h1><a href="/">Ruth John</a></h1>
-      </section>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/things/" class="nav-active">My Things</a>
-        <a href="/contact/">Contact</a>
-      </nav>
-    </header>
-    <main>
+<body class="cv"><div class="wrapper">
 
-      <article class="portfolio-list">
-        <p>My things are here</p>
-<p>Everything is in folders based on the data taxonomy</p>
-<p>So talks &amp; workshops are together because I would need to input the same data for them.</p>
-<p>Display as such:</p>
-<p>Everything on one page - colour code the following categories:</p>
-<ul>
-<li>work/projects -&gt; pro_</li>
-<li>talks/workshops -&gt; tw_</li>
-<li>publications (articles, interviews, podcasts, judge) -&gt; pub_</li>
-</ul>
-<p>maybe everything is one big category - with filters - have I been here before</p>
-<p>CV section as well - with awards, positions, director, founder, judge etc...</p>
-<p>Work with me - I think web audio and midi workshops need a separate thing - same site tho? workshops.ruthjohn.com</p>
-<p>used tags:</p>
+  <!-- "She’s really good at what she does, whatever that is" Sam Machin, @sammachin, ex-collegue, now friend -->
 
-        <ul>
-        </ul>
-      </article>
+  <nav class="main-nav page-section_nav">
+    <a href="/" class="nav-active">RJ</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#speaking">Speaking & Writing</a>
+    <a href="#contact">Get In Touch</a>
+    <a href="http://blog.rumyra.com" rel="external">Blog</a>
+  </nav>
 
-    </main>
+  <!-- "Ruth once taught me what CSS was good for. Now I hardly ever use <blink> tags." Terence Eden, @edent, ex-collegue, now friend -->
+
+  <header class="page-section home-about" id="about" data-section="about">
+
+    <section class="page-section_header">
+      <h1><a href="/">Ruth John</a></h1>
+    </section>
+
+    <section class="page-section_copy">
+
+
+Ruth John
+
+
+
+
+    </section>
+  </header>
+
 
     <footer>
       <p><span>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Designed and built by Ruth John.</span></p>
@@ -104,5 +101,82 @@
     
       </ul>
     </footer>
+  </div><!-- contact -->
+
+
+
+</div>
+
+<script type="text/javascript">
+
+// get y position of divs
+const homeSections = document.querySelectorAll('.page-section');
+const mainNav = document.querySelector('.main-nav');
+const links = document.querySelectorAll('.main-nav a');
+var bPoints = [0];
+// TODO generate this
+const sectionInfo = {
+  about: {
+    textCol: 'hsla(60, 33%, 99%, 1)',
+    boxSh: 'hsla(60, 33%, 99%, 0.4)',
+    bkCol: 'hsla(359, 41%, 79%, 1)'
+  },
+  cv: {
+    textCol: 'hsla(213, 35%, 25%, 1)',
+    boxSh: 'hsla(213, 35%, 25%, 0.4)',
+    bkCol: 'hsla(26, 27%, 85%, 1)'
+  },
+  talk: {
+    textCol: 'hsla(302, 15%, 39%, 1)',
+    boxSh: 'hsla(302, 15%, 39%, 0.4)',
+    bkCol: 'hsla(47, 45%, 95%, 1)'
+  },
+  contact: {
+    textCol: 'hsla(26, 27%, 85%, 1)',
+    boxSh: 'hsla(26, 27%, 85%, 0.4)',
+    bkCol: 'hsla(213, 35%, 25%, 1)'
+  }
+};
+for (i=0; i<homeSections.length; i++) {
+  var boxH = homeSections[i].getBoundingClientRect().height;
+  var newPoint = bPoints[bPoints.length - 1]+boxH;
+  bPoints.push(newPoint);
+}
+// if scroll is inbetween vh height and bottom of section
+// change class
+function updateBPoints() {
+}
+// Reference: http://www.html5rocks.com/en/tutorials/speed/animations/
+var last_known_scroll_position = 0;
+var ticking = false;
+function doSomething(scroll_pos) {
+  // do something with the scroll position
+  for (i=0; i<homeSections.length; i++) {
+    if ( (bPoints[i] < scroll_pos) && (scroll_pos < bPoints[i+1]) ) {
+      mainNav.style.backgroundColor = sectionInfo[homeSections[i].dataset.section].bkCol;
+      for (j=0; j<links.length; j++) {
+        links[j].style.borderColor = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[j].style.color = sectionInfo[homeSections[i].dataset.section].textCol;
+        links[j].style.boxShadow = 'inset 0px 0px 0px 2px '+sectionInfo[homeSections[i].dataset.section].bkCol+', inset 0px 0px 0px 5px '+sectionInfo[homeSections[i].dataset.section].boxSh;
+      }
+    }
+  }
+
+}
+function styleLinks(sectionEls) {
+}
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      ticking = false;
+    });
+  }
+  ticking = true;
+});
+
+</script>
+
 </body>
 </html>
