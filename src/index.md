@@ -4,10 +4,8 @@ draft: false
 layout: index.hbs
 ---
 
-Ruth John is an award nominated digital artist, web consultant, keynote speaker and writer, with 15 years of experience in the digital industry.
+And I'm a digital artist and consultant, with over 15 years experience enabling companies to create specialised projects, where ... skillset is needed.
 
-She's a [Google Developer Expert](https://developers.google.com/experts/people/ruth-john), is on the board of directors for [Bath Digital Festival](https://bathdigitalfestival.co.uk/) and in her career has worked for companies such as o2 (Telefonica) and BSkyB, and clients such as the BBC, NBC, Cancer Research UK, Heineken and Channel 4 among others.
+I'm a [Google Developer Expert](https://developers.google.com/experts/people/ruth-john), am on the board of directors for [Bath Digital Festival](https://bathdigitalfestival.co.uk/) and in my career have worked for companies such as o2 (Telefonica) and BSkyB, and clients such as the BBC, NBC, Cancer Research UK, Heineken and Channel 4 among others.
 
-<!-- Check out her 'Things' to see her range of previous work, digital installations, talk engagements and published articles. -->
-
-Ruth also belongs to the <code>[{ Live : JS }](https://livejs.network)</code> collective, which brings audio and visual code to life, in live performances across the globe.
+I also helped co-found <code>[{ Live : JS }](https://livejs.network)</code> - a collective, which brings audio and visual code to life, in live performances across the globe.

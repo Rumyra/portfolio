@@ -1,8 +1,8 @@
 {
     "basics": {
         "name": "Ruth John",
-        "label": "Freelance Creative Technologist and Consultant Front End Developer  |  \nGoogle Developer Expert",
-        "summary": "Ruth has been working for over a decade in web\/software\/application design and development, with a current position in research and development where she excels with her broad range of skills in different areas of technology. Anything ranging from online to media to communications.\n\nHaving worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience in digital. Starting her career in design and front end development her education and skills in electronics, music technology and computer arts has led her comfortably into research and development, where she consults and manages both within her team and elsewhere within the wider business. Her current position has seen her innovate and prototype new ideas, to improve customer experience and business processes within a telecommunications company; leading projects and teams to explore better digital experiences for both customers and staff. \n\n\u201cI love the challenge innovation brings. To keep up to date with emerging technology but make it relevant to the user, to put it in context.\u201d\n\nRuth has experience managing projects and teams, as well as designing and developing, with skills including HTML, CSS, JavaScript, Adobe CS, wire-framing, accessibility and usability, user testing, branding, as well as setting and managing coding standards. She also has server side coding experience, with node, PHP, Ruby, SQL and MongoDB, and hardware experience, building electronic prototypes.",
+        "label": "Consultant Creative Technologist  |  Google Developer Expert",
+        "summary": "Ruth has over fifteen years experience in digital design and development, where she excels with her broad range of skills in different areas of technology. She now works with established companies, startups and artists to help realise their creative concepts. \n\n\"I love how creative development can be. You have the tools at your fingertips to build whatever you can conceive. That's incredibly powerful.\"\n\nHaving worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience. Starting her career in design and front end development, her education and skills in electronics, music technology and computer arts led her comfortably into research and development, where she consulted and managed both within her team and elsewhere within the wider business.\n\nRuth specialises in creative development; audio, data visualisation, animation and 3D and is a recognised Google Developer Expert in Web Technologies. As well as designing and developing she has managed projects and teams. She is a keynote speaker, runs workshops and has been teaching on an adult course for the past two years.\n\nHer primary skills include HTML, CSS, JavaScript and Adobe CS. She is a seasoned conference speaker and technical writer. Her other experience includes wire-framing, accessibility, user testing, branding, as well as setting and managing coding standards. She also has server side coding experience, with node, PHP, Ruby, SQL and MongoDB, and hardware experience, building electronic prototypes.",
         "location": {
             "postalCode": "BS3",
             "countryCode": "GB"
@@ -24,15 +24,49 @@
     "work": [
         {
             "company": "Self Employed",
-            "summary": "Self employed creative technologist, consulting on various innovative web projects.",
-            "position": "Freelance Creative Technologist",
+            "summary": "Working with established companies, startups and artists to help realise their creative concepts.",
+            "position": "Consultant Creative Technologist",
             "startDate": "2017-01-01"
+        },
+        {
+            "company": "ZU-UK",
+            "summary": "Employed to create an interactive map for art project: Pick Me Up. The custom designed map utilises web sockets to update in realtime, to expose markers of pay phones being rung and picked up throughout the UK. Read more about the project in the included link.",
+            "position": "Creative Developer",
+            "startDate": "2018-12-01"
         },
         {
             "company": "DevelopMe_",
             "summary": "Lecturer for adult developer training courses. Teaching front end development to industry standard.",
             "position": "Front End Instructor",
             "startDate": "2016-09-01"
+        },
+        {
+            "company": "Mozilla",
+            "summary": "Employed to update technical documentation on MDN Docs, a worldwide developer documentation resource. Specifically sought for my expertise in audio as new tutorials and demos were required, along with updates to existing documentation.",
+            "position": "Technical Documentation Specialist",
+            "startDate": "2018-07-01",
+            "endDate": "2018-10-01"
+        },
+        {
+            "company": "Samsung Developers",
+            "summary": "Worked with the Samsung Internet team to create an audio visualisation app, to highlight the capabilities of Samsung Internet Browser on the S8 phone. I worked closely with one member of the team and together we designed and built the entire app using web technologies. It works in all modern browsers.",
+            "position": "Creative Developer",
+            "startDate": "2017-10-01",
+            "endDate": "2017-12-01"
+        },
+        {
+            "company": "Lunar",
+            "summary": "Worked with the Technical Lead at Lunar to build an email constructor and distributor system. I developed a modular email template system based on designs, so the client could 'build' their own custom emails based on their needs.",
+            "position": "Senior Frontend Developer",
+            "startDate": "2017-06-01",
+            "endDate": "2017-08-01"
+        },
+        {
+            "company": "Rockpool Ltd",
+            "summary": "The project was two-fold. The first piece was to create a mobile first design for the mobile app built upon React Native. This I undertook in Sketch and helped integrate into the build.\n\nThe second was to create an interactive data visualisation for users to navigate the data the app accumulated whilst in use. This was built with d3.js and integrated with a web view within React Native.",
+            "position": "Designer and Data Visualisation Deveoper",
+            "startDate": "2017-01-01",
+            "endDate": "2017-05-01"
         },
         {
             "company": "O2 (Telef\u00f3nica UK)",
@@ -49,7 +83,7 @@
             "endDate": "2014-12-01"
         },
         {
-            "company": "LBi",
+            "company": "LBi US",
             "summary": "Employed to create a modular design implementation for a client website and help integrate into their .net back end.",
             "position": "Senior Front End Developer (contract)",
             "startDate": "2012-03-01",
@@ -102,137 +136,9 @@
         {
             "institution": "University of Portsmouth",
             "area": "Entertainment Technology",
-            "studyType": "BSc",
-            "startDate": "2000-01-01",
-            "endDate": "2004-01-01"
-        },
-        {
-            "institution": "University of Portsmouth",
-            "area": "Entertainment Technology",
             "studyType": "Bachelor of Science (B.Sc.)",
             "startDate": "2000-01-01",
             "endDate": "2004-01-01"
-        }
-    ],
-    "publications": [
-        {
-            "name": "Form Validation with Web Audio",
-            "publisher": "CSS Tricks",
-            "website": "https:\/\/css-tricks.com\/form-validation-web-audio\/",
-            "summary": "Article for CSS Tricks exploring different uses for the Web Audio API",
-            "releaseDate": "2017-08-25"
-        },
-        {
-            "name": "Bringing Your Code To The Streets",
-            "publisher": "24 Ways",
-            "website": "https:\/\/24ways.org\/2015\/bringing-your-code-to-the-streets\/",
-            "summary": "Web code is breaking out of the browser... fast. This article takes us on a journey embedding its code onto your streets, through interactive audio visual excitement!",
-            "releaseDate": "2015-12-06"
-        },
-        {
-            "name": "Make Your Browser Dance",
-            "publisher": "24 Ways",
-            "website": "https:\/\/24ways.org\/2013\/make-your-browser-dance\/",
-            "summary": "I created the ability to pick up on ambient sound around your device and pipe it into the Web Audio API, as there was no line in functionality. I was nominated for an award for the innovation behind the use of this technology.",
-            "releaseDate": "2013-12-02"
-        }
-    ],
-    "skills": [
-        {
-            "name": "User Experience"
-        },
-        {
-            "name": "Research Development"
-        },
-        {
-            "name": "HTML 5"
-        },
-        {
-            "name": "JavaScript"
-        },
-        {
-            "name": "Software Project Management"
-        },
-        {
-            "name": "CSS"
-        },
-        {
-            "name": "PHP"
-        },
-        {
-            "name": "Project Management"
-        },
-        {
-            "name": "HTML"
-        },
-        {
-            "name": "Advanced CSS"
-        },
-        {
-            "name": "HTML5"
-        },
-        {
-            "name": "Front-end"
-        },
-        {
-            "name": "Team Management"
-        },
-        {
-            "name": "Usability"
-        },
-        {
-            "name": "SQL"
-        },
-        {
-            "name": "Adobe Creative Suite"
-        },
-        {
-            "name": "jQuery"
-        },
-        {
-            "name": "Illustrator"
-        },
-        {
-            "name": "XHTML"
-        },
-        {
-            "name": "Web Development"
-        },
-        {
-            "name": "XSLT"
-        },
-        {
-            "name": "Web Applications"
-        },
-        {
-            "name": "SEO"
-        },
-        {
-            "name": "Music Supervision"
-        },
-        {
-            "name": "Drinking Water Quality"
-        },
-        {
-            "name": "Gravel"
-        },
-        {
-            "name": "Sauces"
-        },
-        {
-            "name": "Ruby on Rails"
-        },
-        {
-            "name": "Ruby"
-        },
-        {
-            "name": "MongoDB"
-        },
-        {
-            "name": "Node.js"
-        },
-        {
-            "name": "Yarn"
         }
     ]
 }
