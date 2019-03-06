@@ -1,0 +1,144 @@
+{
+    "basics": {
+        "name": "Ruth John",
+        "label": "Consultant Creative Technologist  |  Google Developer Expert",
+        "summary": "Ruth has over fifteen years experience in digital design and development, where she excels with her broad range of skills in different areas of technology. She now works with established companies, startups and artists to help realise their creative concepts. \n\n\"I love how creative development can be. You have the tools at your fingertips to build whatever you can conceive. That's incredibly powerful.\"\n\nHaving worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience. Starting her career in design and front end development, her education and skills in electronics, music technology and computer arts led her comfortably into research and development, where she consulted and managed both within her team and elsewhere within the wider business.\n\nRuth specialises in creative development; audio, data visualisation, animation and 3D and is a recognised Google Developer Expert in Web Technologies. As well as designing and developing she has managed projects and teams. She is a keynote speaker, runs workshops and has been teaching on an adult course for the past two years.\n\nHer primary skills include HTML, CSS, JavaScript and Adobe CS. She is a seasoned conference speaker and technical writer. Her other experience includes wire-framing, accessibility, user testing, branding, as well as setting and managing coding standards. She also has server side coding experience, with node, PHP, Ruby, SQL and MongoDB, and hardware experience, building electronic prototypes.",
+        "location": {
+            "postalCode": "BS3",
+            "countryCode": "GB"
+        },
+        "website": "https:\/\/ruthjohn.com",
+        "profiles": [
+            {
+                "network": "linkedin",
+                "username": "ruthjohn",
+                "url": "https:\/\/www.linkedin.com\/in\/ruthjohn"
+            },
+            {
+                "network": "twitter",
+                "username": "rumyra",
+                "url": "https:\/\/twitter.com\/rumyra"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Self Employed",
+            "summary": "Working with established companies, startups and artists to help realise their creative concepts.",
+            "position": "Consultant Creative Technologist",
+            "startDate": "2017-01-01"
+        },
+        {
+            "company": "ZU-UK",
+            "summary": "Employed to create an interactive map for art project: Pick Me Up. The custom designed map utilises web sockets to update in realtime, to expose markers of pay phones being rung and picked up throughout the UK. Read more about the project in the included link.",
+            "position": "Creative Developer",
+            "startDate": "2018-12-01"
+        },
+        {
+            "company": "DevelopMe_",
+            "summary": "Lecturer for adult developer training courses. Teaching front end development to industry standard.",
+            "position": "Front End Instructor",
+            "startDate": "2016-09-01"
+        },
+        {
+            "company": "Mozilla",
+            "summary": "Employed to update technical documentation on MDN Docs, a worldwide developer documentation resource. Specifically sought for my expertise in audio as new tutorials and demos were required, along with updates to existing documentation.",
+            "position": "Technical Documentation Specialist",
+            "startDate": "2018-07-01",
+            "endDate": "2018-10-01"
+        },
+        {
+            "company": "Samsung Developers",
+            "summary": "Worked with the Samsung Internet team to create an audio visualisation app, to highlight the capabilities of Samsung Internet Browser on the S8 phone. I worked closely with one member of the team and together we designed and built the entire app using web technologies. It works in all modern browsers.",
+            "position": "Creative Developer",
+            "startDate": "2017-10-01",
+            "endDate": "2017-12-01"
+        },
+        {
+            "company": "Lunar",
+            "summary": "Worked with the Technical Lead at Lunar to build an email constructor and distributor system. I developed a modular email template system based on designs, so the client could 'build' their own custom emails based on their needs.",
+            "position": "Senior Frontend Developer",
+            "startDate": "2017-06-01",
+            "endDate": "2017-08-01"
+        },
+        {
+            "company": "Rockpool Ltd",
+            "summary": "The project was two-fold. The first piece was to create a mobile first design for the mobile app built upon React Native. This I undertook in Sketch and helped integrate into the build.\n\nThe second was to create an interactive data visualisation for users to navigate the data the app accumulated whilst in use. This was built with d3.js and integrated with a web view within React Native.",
+            "position": "Designer and Data Visualisation Deveoper",
+            "startDate": "2017-01-01",
+            "endDate": "2017-05-01"
+        },
+        {
+            "company": "O2 (Telef\u00f3nica UK)",
+            "summary": "Leading projects and teams within the Lab.\nResearching new and existing technologies and how they could benefit the business; whether that's improving existing company practises or proposing an entirely new area O2 should be considering. Concentrating on all areas within the company, anything from customers, networks, staff, stores, handsets etc... Designing and building prototypes, testing with users and moving the prototype forward into a beta product should it be successful.",
+            "position": "Technical Lead, The Lab",
+            "startDate": "2014-12-01",
+            "endDate": "2016-07-01"
+        },
+        {
+            "company": "Telef\u00f3nica UK",
+            "summary": "Researching new and existing technologies and how they could benefit the business; whether that's improving existing company practises or proposing an entirely new area O2 should be considering. Concentrating on all areas within the company, anything from customers, networks, staff, stores, handsets etc... Designing and building prototypes, testing with users and moving the prototype forward into a beta product should it be successful.",
+            "position": "Senior Creative Technologist, The Lab, O2.",
+            "startDate": "2012-06-01",
+            "endDate": "2014-12-01"
+        },
+        {
+            "company": "LBi US",
+            "summary": "Employed to create a modular design implementation for a client website and help integrate into their .net back end.",
+            "position": "Senior Front End Developer (contract)",
+            "startDate": "2012-03-01",
+            "endDate": "2012-04-01"
+        },
+        {
+            "company": "Haygarth",
+            "summary": "Covering for the senior front end developer role until the company employed a permanent member of staff. I was the go-to developer for HTML(5), CSS(3) and JavaScript. As an agency environment, it was fast paced, varied and required good personal management to meet strict deadlines.",
+            "position": "Senior Front End Developer (contract)",
+            "startDate": "2011-10-01",
+            "endDate": "2012-01-01"
+        },
+        {
+            "company": "Beam",
+            "summary": "Managed the delivery of front-end work for all company projects. I lead the team to produce UI\/UX design, mark-up, styling and implementing JavaScript where necessary. Additionally I was tasked with ensuring policy coding standards, accessibility and usability were adhered to.  Implementation was HTML5 and CSS3 and this was integrated with PHP based templates (Zend\/.phtml). I also created a CSS framework to be used on all applications, based on the company branding and liaising with the company\u2019s designer, developers and clients.",
+            "position": "Senior Front End Designer",
+            "startDate": "2010-06-01",
+            "endDate": "2011-04-01"
+        },
+        {
+            "company": "secretLondon",
+            "summary": "Managing a build for Secret London, overseeing a team of designers and front end developers for a community project.",
+            "position": "Design and Front End Manager",
+            "startDate": "2010-03-01",
+            "endDate": "2010-06-01"
+        },
+        {
+            "company": "Essence",
+            "summary": "Designer\/Front End Developer. Designing websites from a brief, with well thought out usability and adhering to brand guidelines. Creating accessible, browser compatible, valid templates, using XHTML and CSS as well as JavaScript and Actionscript. I directed the team to implement HTML5 classes and IDs following the guidelines of Andy Clarke and Jon Tan. Finally using PHP to help integrate them with the company\u2019s own \u2018Fig\u2019 content management system, based on the Zend framework. Taking a senior role, I also regularly gain experience mentoring juniors and middleweight designers and developers, leading website builds in large company contracts, working with project\/account managers planning projects and estimating billable time, interviewing prospective freelance candidates, revising coding guidelines and standards as well as advising on how to enhance company procedures.",
+            "position": "Front End Designer",
+            "startDate": "2008-06-01",
+            "endDate": "2010-06-01"
+        },
+        {
+            "company": "Airlock",
+            "summary": "Web Developer. Having established a position as an influential front-end developer within the technical department, and forging close links with the creative department, I successfully and reliably delivered a number of challenging projects within a fast paced agency environment. Many projects were implemented using Symphony CMS, requiring an ability to create modular visual designs, of a pixel perfect standard.",
+            "position": "Front End Developer",
+            "startDate": "2007-08-01",
+            "endDate": "2008-05-01"
+        },
+        {
+            "company": "Symbios Group",
+            "summary": "Web Developer\/Designer. Employed as a web developer, building community\/user based sites using PHP, XHTML, CSS, SQL and JavaScript. Promptly took over the company designer position, undertaking all design for the company including web design and the associated front end development, print work, web banners and adverts as well as logo and branding work. All design work undertaken in Adobe CS, with high level experience in Photoshop and Illustrator.",
+            "position": "Developer\/Designer",
+            "startDate": "2005-04-01",
+            "endDate": "2007-06-01"
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Portsmouth",
+            "area": "Entertainment Technology",
+            "studyType": "Bachelor of Science (B.Sc.)",
+            "startDate": "2000-01-01",
+            "endDate": "2004-01-01"
+        }
+    ]
+}
