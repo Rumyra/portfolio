@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <!--meta content-->
+
+  <meta name="author" content="Ruth John (@rumyra)">
+  <meta name="dcterms.rightsHolder" content="Built by Ruth John, United Kingdom, 2019">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ desc }}">
+
+  <link type="text/css" href="../assets/cv.css" rel="stylesheet" />
+
+</head>
+
+<body><div class="page--cv">
+
+  <header class="cv__header">
+    <!-- <img src="/assets/images/solo.svg" /> -->
+    <figure class="logo">
+      {{>logo}}
+    </figure>
+
+    <div>
+      <h1 class="header--large">Ruth John:</h1>
+      <h2 class="header--small">Curriculum Vitae</h2>
+    </div>
+  </header>
+
+{{#data}}
+
+    <article class="cv__sum cv-section">
+      <header class="cv-section__header">
+        <h3>Summary</h3>
+      </header>
+      <section class="cv-section__content">
+        <p>{{{basics.summary}}}</p>
+      </section>
+    </article>
+
+    <article class="cv__ex cv-section">
+      <header class="cv-section__header">
+        <h3>Experience</h3>
+      </header>
+      <ul class="cv-section__list">
+      {{#each work}}
+        <li class="cv-section__item">
+          <header class="cv-section__item-header">
+            <p><time>{{startDate}}</time>
+            {{#if endDate}}
+              <time>- {{endDate}}</time></p>
+            {{else}}
+              <time>- Present</time>
+            {{/if}}
+            </p>
+            <h4>{{company}} : {{position}}</h4>
+          </header>
+          <p class="cv-section__item-text">{{summary}}</p>
+          {{#if link}}
+            <p class="cv-section__item-link"><a href="{{link}}">{{link}}</a></p>
+          {{/if}}
+        </li>
+      {{/each}}
+      </ul>
+    </article>
+
+    <article class="cv__ed cv-section">
+      <header class="cv-section__header">
+        <h3>Education</h3>
+      </header>
+      <ul class="cv-section__list">
+      {{#each education}}
+        <li class="cv-section__item">
+          <header class="cv-section__item-header">
+            <p><time>{{startDate}}</time>
+            {{#if endDate}}
+              <time>- {{endDate}}</time></p>
+            {{else}}
+              <time>- Present</time>
+            {{/if}}
+            </p>
+            <h4>{{institution}}</h4>
+          </header>
+          <p class="cv-section__item-text">{{studyType}} : {{area}}</p>
+        </li>
+      {{/each}}
+      </ul>
+    </article>
+
+    <article class="cv__other cv-section">
+      <header class="cv-section__header">
+        <h3>Other</h3>
+      </header>
+      <ul class="cv-section__list">
+      {{#each other}}
+        <li class="cv-section__item">
+          <header class="cv-section__item-header">
+            <h4>{{title}}</h4>
+          </header>
+          <div class="cv-section__content">{{{description}}}</div>
+        </li>
+      {{/each}}
+      </ul>
+    </article>
+
+{{/data}}
+
+    <aside class="cv__contact">
+      <ul class="more-info">
+
+        <li class="more-info__item">
+          <a class="more-info__link" href="http://codepen.io/Rumyra" aria-label="See Ruth's stuff on Codepen" title="See Ruth's stuff on Codepen">
+            <figure class="more-info__icon">
+              {{>codepen}}
+            </figure>
+            <p class="more-info__text-link">http://codepen.io/Rumyra</p>
+            <p class="more-info__juxta">Have a browse at the creative code Ruth writes on her Codepen</p>
+          </a>
+        </li>
+
+        <li class="more-info__item">
+          <a class="more-info__link" href="http://www.github.com/rumyra" rel="external" aria-label="Ruth's code on Github" title="Ruth's code on Github">
+            <figure class="more-info__icon">
+              {{>github}}
+            </figure>
+            <p class="more-info__text-link">http://www.github.com/rumyra</p>
+            <p class="more-info__juxta">Fluent in git, you can find her github account here</p>
+          </a>
+        </li>
+
+        <li class="more-info__item">
+          <a class="more-info__link" href="https://noti.st/rumyra" aria-label="Ruth's previous engagements on Notist" title="Ruth's previous engagements on Notist">
+            <figure class="more-info__icon">
+              {{>notist}}
+            </figure>
+            <p class="more-info__text-link">https://noti.st/rumyra</p>
+            <p class="more-info__juxta">An industry recognised, keynote speaker; see her talks on Notist</p>
+          </a>
+        </li>
+
+        <li class="more-info__item">
+          <a class="more-info__link" href="http://www.twitter.com/rumyra" rel="external" aria-label="Follow Ruth on Twitter" title="Follow Ruth on Twitter">
+            <figure class="more-info__icon">
+              {{>twitter}}
+            </figure>
+            <p class="more-info__text-link">http://www.twitter.com/rumyra</p>
+            <p class="more-info__juxta">You can find Ruth on Twitter</p>
+          </a>
+        </li>
+
+        <li class="more-info__item">
+          <a class="more-info__link" href="https://www.linkedin.com/in/ruthjohn/" aria-label="Ruth John on Linkedin" title="Ruth John on Linkedin">
+            <figure class="more-info__icon">
+              {{>linkedin}}
+            </figure>
+            <p class="more-info__text-link">https://www.linkedin.com/in/ruthjohn/</p>
+            <p class="more-info__juxta">View all of Ruth's professional history & previous companies on LinkedIn</p>
+          </a>
+        </li>
+
+    </ul>
+  </aside>
+
+</div>
+
+
+<script type="text/javascript">
+</script>
+
+</body>
+</html>
