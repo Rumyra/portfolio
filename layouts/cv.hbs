@@ -55,14 +55,16 @@
           <header class="cv-section__item-header">
             <p><time>{{startDate}}</time>
             {{#if endDate}}
-              <time>- {{endDate}}</time></p>
+              <time>- {{endDate}}</time>
             {{else}}
               <time>- Present</time>
             {{/if}}
             </p>
             <h4>{{company}} : {{position}}</h4>
           </header>
-          <p class="cv-section__item-text">{{summary}}</p>
+          {{#if summary}}
+            <p class="cv-section__item-text">{{summary}}</p>
+          {{/if}}
           {{#if link}}
             <p class="cv-section__item-link"><a href="{{link}}">{{link}}</a></p>
           {{/if}}
@@ -96,7 +98,7 @@
 
     <article class="cv__other cv-section">
       <header class="cv-section__header">
-        <h3>Other</h3>
+        <h3>Additional Info</h3>
       </header>
       <ul class="cv-section__list">
       {{#each other}}

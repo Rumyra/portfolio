@@ -2,7 +2,7 @@
     "basics": {
         "name": "Ruth John",
         "label": "Consultant Creative Technologist  |  Google Developer Expert",
-        "summary": "<p>Ruth has over fifteen years experience in digital design and development, where she excels with her broad range of skills in different areas of technology.</p><p>She now works with established companies, startups and artists to help realise their creative concepts.</p><blockquote><q>I love how creative development can be. You have the tools at your fingertips to build whatever you can conceive. That's incredibly powerful.</q></blockquote><p>Having worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience. Starting her career in design and front end development, her education and skills in electronics, music technology and computer arts led her comfortably into research and development, where she consulted and managed both within her team and elsewhere within the wider business.</p><p>Ruth specialises in creative development; audio, data visualisation, animation and 3D and is a recognised <a href=\"https://developers.google.com/programs/experts/directory/\">Google Developer Expert in Web Technologies</a>. As well as designing and developing she has managed projects and teams. She is a keynote speaker, runs workshops and has been teaching on an adult course for the past two years.</p><p>Her primary skills include HTML, CSS, JavaScript and design. She is a seasoned conference speaker and technical writer. Her other experience includes wire-framing, accessibility, user testing, branding, as well as setting and managing coding standards. She also has server side coding experience, with node, PHP, Ruby, SQL and MongoDB, and hardware experience, building electronic prototypes.</p>",
+        "summary": "<p>Ruth has over fifteen years experience in digital design and development, where she excels with her broad range of skills in different areas of technology.</p><p>She now works with established companies, startups and artists to help realise their creative concepts.</p><blockquote><q>I love how creative development can be. You have the tools at your fingertips to build whatever you can conceive. That's incredibly powerful.</q></blockquote><p>Having worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience. Starting her career in design and front end development, her education and skills in electronics, music technology and computer arts led her comfortably into research and development, where she consulted and managed both within her team and elsewhere within the wider business.</p><p>Ruth specialises in creative development; audio, data visualisation, animation and 3D and is a recognised <a href=\"https://developers.google.com/programs/experts/directory/\">Google Developer Expert in Web Technologies</a>. As well as designing and developing she has managed projects and teams. She is a keynote speaker, runs workshops and has been teaching on an adult course for the past two years.</p><p>Her primary skills include HTML, CSS, JavaScript, hardware and design. She is a seasoned conference speaker and technical writer. Her other experience includes user experience, accessibility, user testing, branding, as well as setting and managing coding standards. She also has server side coding experience, with node, PHP, Ruby, SQL and MongoDB.</p>",
         "location": {
             "postalCode": "BS3",
             "countryCode": "GB"
@@ -24,11 +24,11 @@
     "other": [
         {
             "title": "Community",
-            "description": "<p>Ruth is on the board of directors for <a href=\"https://bathdigitalfestival.co.uk/\">Bath Digital Festival</a> and takes time to mentor women in the industry who need support furthering their careers.</p><p>She co-founded <a href=\"https://livejs.network/\">{ Live : JS }</a>, a collective of artists who perform live audio visual performances with bespoke software and hardware programmed primarily with javascript.</p>"
+            "description": "<p>Ruth is on the board of directors for <a href=\"https://bathdigitalfestival.co.uk/\">Bath Digital Festival</a> and takes time to mentor women in the industry who need support furthering their careers.</p><p>She co-founded <a href=\"https://livejs.network/\">{ Live : JS }</a>, a collective of artists who perform live audio visual performances with bespoke software and hardware programmed primarily with JavaScript.</p>"
         },
         {
             "title": "Speaking",
-            "description": "<p>A keynote speaker, Ruth has given plenty of talks over her career. They are enthusiastic to say the least, and mostly about the fun journey she undertakes when discovering how enjoyable creative development can be.</p><p>Talks usually involve lots of music and lots of colour and how to combine the two to great effect. The majority can be found <a href=\"https://noti.st/rumyra\">listed on Notist</a>, with links to view them.</p>"
+            "description": "<p>A keynote speaker, Ruth has given plenty of talks over her career. They are motivating and enthusiastic, and about the entertaining journey she undertakes when discovering how enjoyable creative development can be.</p><p>Talks usually involve lots of music and lots of colour and how to combine the two to great effect. The majority can be found <a href=\"https://noti.st/rumyra\">listed on Notist</a>, with links to view them.</p>"
         },
         {
             "title": "Publications",
@@ -82,20 +82,19 @@
         {
             "company": "Rockpool Ltd",
             "summary": "The project was two-fold. The first piece was to create a mobile first design for the mobile app built upon React Native. This I undertook in Sketch and helped integrate into the build.\n\nThe second was to create an interactive data visualisation for users to navigate the data the app accumulated whilst in use. This was built with d3.js and integrated with a web view within React Native.",
-            "position": "Designer and Data Visualisation Deveoper",
+            "position": "Designer and Data Visualisation Developer",
             "startDate": "2017-01-01",
             "endDate": "2017-05-01"
         },
         {
             "company": "O2 (Telef\u00f3nica UK)",
-            "summary": "Leading projects and teams within the Lab.\nResearching new and existing technologies and how they could benefit the business; whether that's improving existing company practises or proposing an entirely new area O2 should be considering. Concentrating on all areas within the company, anything from customers, networks, staff, stores, handsets etc... Designing and building prototypes, testing with users and moving the prototype forward into a beta product should it be successful.",
             "position": "Technical Lead, The Lab",
             "startDate": "2014-12-01",
             "endDate": "2016-07-01"
         },
         {
-            "company": "Telef\u00f3nica UK",
-            "summary": "Researching new and existing technologies and how they could benefit the business; whether that's improving existing company practises or proposing an entirely new area O2 should be considering. Concentrating on all areas within the company, anything from customers, networks, staff, stores, handsets etc... Designing and building prototypes, testing with users and moving the prototype forward into a beta product should it be successful.",
+            "company": "O2 (Telef\u00f3nica UK)",
+            "summary": "Leading projects and teams within the Lab.\nResearching new and existing technologies and how they could benefit the business; whether that's improving existing company practises or proposing an entirely new area O2 should be considering. Concentrating on all areas within the company, anything from customers, networks, staff, stores, handsets etc... Designing and building prototypes, testing with users and moving the prototype forward into a beta product should it be successful.",
             "position": "Senior Creative Technologist, The Lab, O2.",
             "startDate": "2012-06-01",
             "endDate": "2014-12-01"
