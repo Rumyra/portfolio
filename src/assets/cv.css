@@ -72,11 +72,13 @@ body {
   margin: var(--verticalSpace) 0px;
   font-size: 1.2rem
 }
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 /*============== CV PAGE LAYOUT */
 .page--cv {
   width: 100%; max-width: 1000px;
-  margin: 0px auto; padding: 0px var(--gutter);
+  margin: 0px auto; padding: 0px var(--gutter) var(--verticalSpace);
   box-sizing: border-box;
   display: grid;
   grid-template-rows: repeat(6, auto);
@@ -98,6 +100,7 @@ body {
 .logo {
   width: 70%;
   justify-self: center;
+  align-self: center;
 }
 .logo path {
   fill: var(--dark);
@@ -113,16 +116,16 @@ body {
   content: "";
   background-image: linear-gradient(
     45deg,
-    var(--purple) 0%, var(--purple) 2%, transparent 2%,
-    transparent 10%, var(--pink) 10%, var(--pink) 12%, transparent 12%,
-    transparent 20%, var(--orange) 20%, var(--orange) 22%, transparent 22%,
-    transparent 30%, var(--green) 30%, var(--green) 32%, transparent 32%,
-    transparent 40%, var(--blue) 40%, var(--blue) 42%, transparent 42%,
-    transparent 50%, var(--purple) 50%, var(--purple) 52%, transparent 52%,
-    transparent 60%, var(--pink) 60%, var(--pink) 62%, transparent 62%,
-    transparent 70%, var(--orange) 70%, var(--orange) 72%, transparent 72%,
-    transparent 80%, var(--green) 80%, var(--green) 82%, transparent 82%,
-    transparent 90%, var(--blue) 90%, var(--blue) 92%, transparent 92%
+    var(--purple) 0%, var(--purple) 1%, transparent 1%,
+    transparent 10%, var(--pink) 10%, var(--pink) 11%, transparent 11%,
+    transparent 20%, var(--orange) 20%, var(--orange) 21%, transparent 21%,
+    transparent 30%, var(--green) 30%, var(--green) 31%, transparent 31%,
+    transparent 40%, var(--blue) 40%, var(--blue) 41%, transparent 41%,
+    transparent 50%, var(--purple) 50%, var(--purple) 51%, transparent 51%,
+    transparent 60%, var(--pink) 60%, var(--pink) 61%, transparent 61%,
+    transparent 70%, var(--orange) 70%, var(--orange) 71%, transparent 71%,
+    transparent 80%, var(--green) 80%, var(--green) 81%, transparent 81%,
+    transparent 90%, var(--blue) 90%, var(--blue) 91%, transparent 91%
     );
   background-size: 100px 100px;
   width: 16rem; height: 4.6rem;
@@ -142,13 +145,16 @@ body {
   font-size: 2em;
   text-align: right;
 }
+.cv-section__item-header:only-child {
+  margin-bottom: 0px;
+}
 
 .cv__sum h3 {
   border-bottom: 1px solid var(--purple);
   color: var(--purple);
 }
 .cv__sum a {
-  text-decoration: none; color: var(--purple);
+  color: var(--purple);
 }
 
 .cv__ex h3 {
@@ -156,7 +162,7 @@ body {
   color: var(--pink);
 }
 .cv__ex a {
-  text-decoration: none; color: var(--pink);
+  color: var(--pink);
 }
 
 .cv__ed h3 {
@@ -169,8 +175,9 @@ body {
   color: var(--green);
 }
 .cv__other a {
-  text-decoration: none; color: var(--green);
+  color: var(--green);
 }
+.cv__other .cv-section__item {padding-bottom: 0px;}
 
 /* text */
 .cv-section__item-text, .cv-section__content p {
@@ -235,6 +242,11 @@ body {
 .more-info__item:nth-of-type(5) .more-info__icon path {fill: var(--blue);}
 .more-info__item:nth-of-type(5) .more-info__text-link {border-color: var(--blue);}
 
+/*========== MODS*/
+.cv-section__item-link a,
+.more-info__text-link {word-break: break-all;}
+
+
 @media screen and (max-width: 650px) {
   .header--large {
     font-size: 2.4rem;
@@ -276,9 +288,17 @@ body {
     background-color: white;
   }
   h1, h2, h3 {
-    break-after: avoid-page;
+    break-after: avoid-page !important;
   }
-  .more-info__item {
+  .more-info__item,
+  .more-info__link,
+  .more-info__icon,
+  .more-info__text-link,
+  .more-info__juxta,
+  .cv-section__item,
+  .cv-section__item-header,
+  .cv-section__item-text,
+  .cv-section__item-link {
     break-inside: avoid;
   }
   p {
