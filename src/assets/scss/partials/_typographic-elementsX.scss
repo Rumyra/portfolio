@@ -56,15 +56,15 @@ a {
   display:inline-block;
   font-weight:normal; font-size:$fontSize;
   text-decoration:underline; letter-spacing:$letterSpacing;
-  color: $white; letter-spacing: $letterSpacing;
+  color: $brand1; letter-spacing: $letterSpacing;
 }
 // normalise font size and remove underline for headers
 p a, address a, ul a, ol a, dl a, menu a { font-size: 100%; }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-size: 100%; color:$white; text-decoration:none;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-size: 100%; color:$brand1; text-decoration:none;}
 
 a:hover, a:active, a:visited {text-decoration:none;}
 a:focus { outline: thin dotted; }
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: $white; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: $brand1; }
 
 
 //5. BLOCK LEVEL TEXT ELEMENTS~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +84,7 @@ q {}
 blockquote {
   margin: $verticalSpace $gutter;
   padding: $verticalSpace $gutter;
-  background-color: transparentize($white, 0.5);
+  background-color: transparentize($cream, 0.5);
   quotes:'"';
   &:before {
   	float: left;
@@ -103,9 +103,9 @@ blockquote {
 pre {
 	margin: $verticalSpace $gutter;
   padding: $verticalSpace $gutter;
-  background-color:$black;
+  background-color:$dark;
   font-size: 100%;
-	color: $white;
+	color: $cream;
   line-height: $lineHeight;
   @include word-wrap;
 	code { background: none; }

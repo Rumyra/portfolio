@@ -14,7 +14,7 @@
   <meta name="author" content="Ruth John (@rumyra)">
   <meta name="dcterms.rightsHolder" content="Built by Ruth John, United Kingdom, 2017">
   <title>{{ title }}</title>
-  <meta name="description" content="">
+  <meta name="description" content="{{ desc }}">
 
   <link type="text/css" href="assets/css/style.css" rel="stylesheet" media="screen" />
 
@@ -59,11 +59,11 @@
       <h3>Work</h3>
       <dl>
         <dt>Current</dt>
-        <dd>I am currently available for speaking engagements & freelance projects, so please <a href="mailto:sayhello@rumyrashead.com">get in touch</a></dd>
+        <dd>I am currently available for speaking engagements & freelance projects, so please <a href="mailto:sayhello@ruthjohn.com">get in touch</a></dd>
         <dt>Ongoing</dt>
         <dd>Front End Instructor for <a href="https://developme.training/">DevelopMe</a></dd>
-        <dt>2018</dt>
-        <dd>Web Audio API documentation for MDN docs: Helped update and write new demos for Mozilla's Developer Network Documentation. The most widely used developer docs on the internet.</dd>
+        <dt>Ongoing</dt>
+        <dd>Documentation for MDN docs: Helped update and write new demos for Mozilla's Developer Network Documentation. The most widely used developer docs on the internet.</dd>
         <dt>2017</dt>
         <dd>VJ-OTG: VJ On The Go - Worked with Samsung Internet Team on an audio visualisation app for the Samsung S8 phone to demonstrate how diverse the Samsung Internet browser is.</dd>
         <dd>Flourish Zone: Interactive Data Visualisation for React Native app, using d3</dd>
@@ -75,7 +75,7 @@
       <h3>Community</h3>
       <dl>
         <dt>Google Developer Expert</dt>
-        <dd>Recognised <a href="https://developers.google.com/experts/people/ruth-john">Google Developer Expert</a> in web technologies, specialising in audio & MIDI on the web.</dd>
+        <dd>Recognised <a href="https://developers.google.com/experts/people/ruth-john">Google Developer Expert</a> in web technologies, specifically creative coding and media apis.</dd>
         <dt>{ Live : JS }</dt>
         <dd>Co founder of the <a href="http://livejs.network/">{ Live : JS }</a> network; a collective of artists who perform live audio/visual shows with JavaScript.</dd>
         <dt>Bath Digital Festival</dt>
@@ -131,6 +131,7 @@
 
         <dt>Web Audio Conf</dt>
         <dd><a href="https://webaudioconf.com/">Opening Keynote</a></dd>
+      </dl>
 
         <!-- <dt>Ableton's Loop Conference</dt>
         <dd><a href="https://loop.ableton.com/2017/">State of Audio on the Web</a></dd>
@@ -179,12 +180,12 @@
 
     <section class="page-section_copy">
       <p>I'm always keen to talk about interesting projects and delighted to hear about talking opportunities.</p>
-      <p>You can get in touch by <a href="mailto:sayhello@rumyrashead.com">dropping me an email</a>.</p>
+      <p>You can get in touch by <a href="mailto:sayhello@ruthjohn.com">dropping me an email</a>.</p>
     </section>
 
     <section class="page-section_copy">
       <h3>Availability</h3>
-      <p>I have time for work, speaking engagements and workshops this year. There's loads of upcoming tech I'm really excited about, <a href="mailto:sayhello@rumyrashead.com">send me an email</a> and we'll talk!</p>
+      <p>I have time for work, speaking engagements and workshops this year. There's loads of upcoming tech I'm really excited about, <a href="mailto:sayhello@ruthjohn.com">send me an email</a> and we'll talk!</p>
     </section>
 
     {{> footer }}
@@ -205,24 +206,24 @@ var bPoints = [0];
 // TODO generate this
 const sectionInfo = {
   about: {
-    textCol: 'hsla(60, 33%, 99%, 1)',
-    boxSh: 'hsla(60, 33%, 99%, 0.4)',
-    bkCol: 'hsla(359, 41%, 79%, 1)'
+    textCol: 'hsla(33, 55%, 92%, 1)',
+    boxSh: 'hsla(33, 55%, 92%, 0.4)',
+    bkCol: 'hsla(346, 63%, 64%, 1)'
   },
   cv: {
-    textCol: 'hsla(213, 35%, 25%, 1)',
-    boxSh: 'hsla(213, 35%, 25%, 0.4)',
-    bkCol: 'hsla(26, 27%, 85%, 1)'
+    textCol: 'hsla(33, 55%, 92%, 1)',
+    boxSh: 'hsla(33, 55%, 92%, 0.4)',
+    bkCol: 'hsla(179, 38%, 58%, 1)'
   },
   talk: {
-    textCol: 'hsla(302, 15%, 39%, 1)',
-    boxSh: 'hsla(302, 15%, 39%, 0.4)',
-    bkCol: 'hsla(47, 45%, 95%, 1)'
+    textCol: 'hsla(33, 55%, 92%, 1)',
+    boxSh: 'hsla(33, 55%, 92%, 0.4)',
+    bkCol: 'hsla(5, 74%, 67%, 1)'
   },
   contact: {
-    textCol: 'hsla(26, 27%, 85%, 1)',
-    boxSh: 'hsla(26, 27%, 85%, 0.4)',
-    bkCol: 'hsla(213, 35%, 25%, 1)'
+    textCol: 'hsla(33, 55%, 92%, 1)',
+    boxSh: 'hsla(33, 55%, 92%, 0.4)',
+    bkCol: 'hsla(315, 3%, 25%, 1)'
   }
 };
 for (i=0; i<homeSections.length; i++) {

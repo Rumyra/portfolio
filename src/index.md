@@ -1,10 +1,11 @@
 ---
 title: About | Ruth John
+desc: Professional website for Ruth John, describing her work, experience, recent talks and publications. You can contact her via the details on this site.
 draft: false
 layout: index.hbs
 ---
 
-Ruth John is an award nominated digital artist, web consultant, keynote speaker and writer, with 15 years of experience in the digital industry.
+Ruth John is an award nominated digital artist, web consultant, technical writer and keynote speaker, with 15 years of experience in the digital industry.
 
 She's a [Google Developer Expert](https://developers.google.com/experts/people/ruth-john), is on the board of directors for [Bath Digital Festival](https://bathdigitalfestival.co.uk/) and in her career has worked for companies such as o2 (Telefonica) and BSkyB, and clients such as the BBC, NBC, Cancer Research UK, Heineken and Channel 4 among others.
 
