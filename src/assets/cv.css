@@ -324,6 +324,7 @@ a:hover {text-decoration: underline;}
   }
 
   .more-info {transform-origin: 36px 36px;}
+  .more-info__item:last-child {margin-right: 30px;}
   .more-info__icon svg {height: 20px;}
   .more-info__link {
     width: 240px;
