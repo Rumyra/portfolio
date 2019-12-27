@@ -4,7 +4,7 @@
   "description": "Ruth John's portfolio and work website",
   "main": "index.js",
   "dependencies": {
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.3.0",
     "metalsmith": "^2.3.0",
     "metalsmith-collections": "^0.9.0",
     "metalsmith-data-loader": "^1.1.2",
