@@ -2,7 +2,7 @@
     "basics": {
         "name": "Ruth John",
         "label": "Consultant Creative Technologist  |  Google Developer Expert",
-        "summary": "<p>Ruth has over fifteen years experience in digital design and development, where she excels with her broad range of skills in different areas of technology.</p><p>She now works with established companies, startups and artists to help realise their creative concepts.</p><blockquote><q>I love how creative development can be. You have the tools at your fingertips to build whatever you can conceive. That's incredibly powerful.</q></blockquote><p>Having worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience. Starting her career in design and front end development, her education and skills in electronics, music technology and computer arts led her comfortably into research and development, where she consulted and managed both within her team and elsewhere within the wider business.</p><p>Ruth specialises in creative development; audio, data visualisation, animation and 3D and is a recognised <a href=\"https://developers.google.com/programs/experts/directory/\">Google Developer Expert in Web Technologies</a>. As well as designing and developing she has managed projects and other developers. She is a keynote speaker, runs workshops and has been teaching on an adult course for over two years.</p><p>Her primary skills include HTML, CSS, JavaScript, hardware and design. She is a seasoned conference speaker and technical writer. Her other experience includes user experience, accessibility, user testing, branding, as well as setting and managing coding standards. She has worked with backend systems running Node, PHP, Ruby, SQL and MongoDB.</p>",
+        "summary": "<p>Ruth has over fifteen years experience in digital design and development, where she excels with her broad range of skills in different areas of technology.</p><p>She now works with established companies, startups and artists to help realise their creative concepts.</p><blockquote><q>I love how creative development can be. You have the tools at your fingertips to build whatever you can conceive. That's incredibly powerful.</q></blockquote><p>Having worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience. Starting her career in design and front end development, her education and skills in electronics, music technology and computer arts led her comfortably into research and development, where she consulted and managed both within her team and elsewhere within the wider business.</p><p>Ruth specialises in creative development; audio, data visualisation, animation and 3D and is a recognised <a href=\"https://developers.google.com/programs/experts/directory/\">Google Developer Expert in Web Technologies</a>. As well as designing and developing she has managed projects and other developers. She is a keynote speaker, runs workshops and has been teaching on an adult course for over four years. Her most recent work has found her technical writing for <a href=\"https://developer.mozilla.org/en-US/\">Mozilla Developer Network (MDN)</a>, the industry leading web documentation platform.</p><p>Primary skills include HTML, CSS, JavaScript, hardware and design. She is a seasoned conference speaker and technical writer. Her other experience includes user experience, accessibility, user testing, branding, as well as setting and managing coding standards. She has worked with backend systems running Node, PHP, Ruby, SQL and MongoDB.</p>",
         "location": {
             "postalCode": "BS3",
             "countryCode": "GB"
@@ -24,7 +24,7 @@
     "other": [
         {
             "title": "Community",
-            "description": "<p>Ruth is on the board of directors for <a href=\"https://bathdigitalfestival.co.uk/\">Bath Digital Festival</a> and takes time to mentor women in the industry who need support furthering their careers.</p><p>She co-founded <a href=\"https://livejs.network/\">{ Live : JS }</a>, a collective of artists who perform live audio visual performances with bespoke software and hardware programmed primarily with JavaScript.</p>"
+            "description": "<p>Ruth is a recognised <a href=\"https://developers.google.com/community/experts/directory/profile/profile-ruth_john\">Google Developer Expert</a> and takes time to mentor women in the industry who need support furthering their careers.</p><p>She co-founded <a href=\"https://livejs.network/\">{ Live : JS }</a>, a collective of artists who perform live audio visual performances with bespoke software and hardware programmed primarily with JavaScript.</p><p>She also co-hosts the <a href=\"https://generativeartistry.com/\">Generative Artistry podcast</a>.</p>"
         },
         {
             "title": "Speaking",
@@ -38,16 +38,9 @@
     "work": [
         {
             "company": "Self Employed",
-            "summary": "Working with established companies, startups and artists to help realise their creative concepts.",
-            "position": "Consultant Creative Technologist",
+            "summary": "Various projects and roles. Working with established companies, startups and artists to help realise their creative concepts. As well as teaching and technical writing.",
+            "position": "Consultant Technologist",
             "startDate": "2017-01-01"
-        },
-        {
-            "company": "ZU-UK",
-            "summary": "Employed to create an interactive map for art project: Pick Me Up. The custom designed map utilises web sockets to update in realtime, to expose markers of pay phones being rung and picked up throughout the UK. Read more about the project in the included link.",
-            "position": "Creative Developer",
-            "startDate": "2018-12-01",
-            "link": "https://zu-uk.com/project/pick-me-up-hold-me-tight/"
         },
         {
             "company": "DevelopMe_",
@@ -58,11 +51,34 @@
         },
         {
             "company": "Mozilla",
-            "summary": "Employed to update technical documentation on MDN Docs, a worldwide developer documentation resource. Specifically sought for my expertise in audio as new tutorials and demos were required, along with updates to existing documentation.",
+            "summary": "Employed to update technical documentation on MDN Docs, a worldwide developer documentation resource. Specifically sought for my expertise in web apis, as new tutorials and demos were required, along with updates to existing documentation.",
             "position": "Technical Documentation Specialist",
             "startDate": "2018-07-01",
-            "endDate": "2018-10-01",
-            "link": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API"
+            "link": "https://developer.mozilla.org/en-US/"
+        },
+        {
+            "company": "Google",
+            "summary": "Hired to write new technical documentation for MDN Docs. Focussing on new web apis to help expend the functionality of the web platform.",
+            "position": "Technical Documentation Specialist",
+            "startDate": "2020-06-01",
+            "startDate": "2020-12-31",
+            "link": "https://developer.mozilla.org/en-US/"
+        },
+        {
+            "company": "Little Lost Robot",
+            "summary": "Worked with the team to help create an app which logs 'pain points' around a city. Part of the Stupid Cities project.",
+            "position": "Creative Developer",
+            "startDate": "2020-02-01",
+            "endDate": "2020-03-01",
+            "link": "https://stupidcities.com/"
+        },
+        {
+            "company": "ZU-UK",
+            "summary": "Employed to create an interactive map for art project: Pick Me Up. The custom designed map utilises web sockets to update in realtime, to expose markers of pay phones being rung and picked up throughout the UK. Read more about the project in the included link.",
+            "position": "Creative Developer",
+            "startDate": "2018-12-01",
+            "endDate": "2020-12-01",
+            "link": "https://zu-uk.com/project/pick-me-up-hold-me-tight/"
         },
         {
             "company": "Samsung Developers",
