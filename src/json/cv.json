@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Ruth John",
-        "label": "Consultant Creative Technologist  |  Google Developer Expert",
+        "label": "Creative Technologist  |  Technical Writer",
         "summary": "<p>Ruth has over fifteen years experience in digital design and development, where she excels with her broad range of skills in different areas of technology.</p><p>She now works with established companies, startups and artists to help realise their creative concepts.</p><blockquote><q>I love how creative development can be. You have the tools at your fingertips to build whatever you can conceive. That's incredibly powerful.</q></blockquote><p>Having worked in creative agencies, media companies, telecommunications and startups, Ruth boasts a vast range of experience. Starting her career in design and front end development, her education and skills in electronics, music technology and computer arts led her comfortably into research and development, where she consulted and managed both within her team and elsewhere within the wider business.</p><p>Ruth specialises in creative development; audio, data visualisation, animation and 3D and is a recognised <a href=\"https://developers.google.com/programs/experts/directory/\">Google Developer Expert in Web Technologies</a>. As well as designing and developing she has managed projects and other developers. She is a keynote speaker, runs workshops and has been teaching on an adult course for over four years. Her most recent work has found her technical writing for <a href=\"https://developer.mozilla.org/en-US/\">Mozilla Developer Network (MDN)</a>, the industry leading web documentation platform.</p><p>Primary skills include HTML, CSS, JavaScript, hardware and design. She is a seasoned conference speaker and technical writer. Her other experience includes user experience, accessibility, user testing, branding, as well as setting and managing coding standards. She has worked with backend systems running Node, PHP, Ruby, SQL and MongoDB.</p>",
         "location": {
             "postalCode": "BS3",
@@ -37,16 +37,24 @@
     ],
     "work": [
         {
+            "company": "Mozilla",
+            "summary": "Full time employment as a technical writer for MDN Docs",
+            "position": "Senior Technical Writer",
+            "startDate": "2021-05-01"
+        },
+        {
             "company": "Self Employed",
             "summary": "Various projects and roles. Working with established companies, startups and artists to help realise their creative concepts. As well as teaching and technical writing.",
             "position": "Consultant Technologist",
-            "startDate": "2017-01-01"
+            "startDate": "2017-01-01",
+            "endDate": "2021-04-30"
         },
         {
             "company": "DevelopMe_",
             "summary": "Lecturer for adult developer training courses. Teaching front end development to industry standard.",
             "position": "Front End Instructor",
             "startDate": "2016-09-01",
+            "endDate": "2021-03-31",
             "link": "https://developme.training/"
         },
         {
@@ -54,6 +62,7 @@
             "summary": "Employed to update technical documentation on MDN Docs, a worldwide developer documentation resource. Specifically sought for my expertise in web apis, as new tutorials and demos were required, along with updates to existing documentation.",
             "position": "Technical Documentation Specialist",
             "startDate": "2018-07-01",
+            "endDate": "2021-03-31",
             "link": "https://developer.mozilla.org/en-US/"
         },
         {
@@ -61,7 +70,7 @@
             "summary": "Hired to write new technical documentation for MDN Docs. Focussing on new web apis to help expend the functionality of the web platform.",
             "position": "Technical Documentation Specialist",
             "startDate": "2020-06-01",
-            "startDate": "2020-12-31",
+            "endDate": "2020-12-31",
             "link": "https://developer.mozilla.org/en-US/"
         },
         {
